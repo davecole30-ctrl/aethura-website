@@ -1,122 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+<head> section in index.html
+     with this complete version
+     ============================================ -->
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aethura — Raise Your Frequency</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-:root{--void:#04030a;--deep:#07050f;--chamber:#0d0b1a;--veil:#13102a;--purple-mid:#3d1f8c;--purple:#6b35d4;--purple-light:#9b69f5;--violet:#c084fc;--gold:#d4a853;--gold-light:#f0c870;--platinum:#e8e4f0;--white:#faf8ff}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{background:var(--void);color:var(--platinum);font-family:"Jost",sans-serif;font-weight:300;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(4,3,10,0.95),transparent);backdrop-filter:blur(2px)}
-.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.nav-logo img{width:36px;height:36px;object-fit:contain}
-.nav-logo span{font-family:"Cinzel",serif;font-size:18px;letter-spacing:0.2em;color:var(--white);font-weight:600}
-.nav-links{display:flex;gap:36px;list-style:none}
-.nav-links a{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(232,228,240,0.7);text-decoration:none;transition:color 0.3s}
-.nav-links a:hover{color:var(--violet)}
-.nav-cta{background:transparent;border:1px solid rgba(155,105,245,0.4);color:var(--violet);padding:10px 24px;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;text-decoration:none;transition:all 0.3s;border-radius:2px}
-.nav-cta:hover{background:rgba(155,105,245,0.1)}
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 100%,rgba(61,31,140,0.5) 0%,transparent 70%),var(--void)}
-.hero-image-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat;opacity:0.3}
-.hero-image-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(4,3,10,0.4) 0%,rgba(4,3,10,0.1) 40%,rgba(4,3,10,0.7) 80%,var(--void) 100%)}
-.hero-content{position:relative;z-index:10;max-width:1200px;margin:0 auto;padding:120px 40px 80px;text-align:center}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
-.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:40px;height:1px;background:var(--gold)}
-h1{font-family:"Cinzel",serif;font-size:clamp(42px,7vw,88px);font-weight:400;line-height:1.05;letter-spacing:0.05em;color:var(--white);margin-bottom:8px}
-h1 em{font-style:italic;color:var(--violet);font-family:"Cormorant Garamond",serif;font-size:1.1em;font-weight:300}
-.hero-sub{font-family:"Cormorant Garamond",serif;font-size:clamp(18px,2.5vw,26px);font-weight:300;font-style:italic;color:rgba(232,228,240,0.7);margin-bottom:48px;letter-spacing:0.05em}
-.hero-hz{display:flex;justify-content:center;gap:12px;margin-bottom:56px;flex-wrap:wrap}
-.hz-pill{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--purple-light);border:1px solid rgba(155,105,245,0.2);padding:8px 16px;border-radius:100px;background:rgba(155,105,245,0.05)}
-.hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
-.btn-primary{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--purple-mid),var(--purple));color:var(--white);padding:18px 40px;font-size:12px;letter-spacing:0.25em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s;box-shadow:0 0 40px rgba(107,53,212,0.4)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 60px rgba(107,53,212,0.6)}
-.btn-android{background:linear-gradient(135deg,#1a3a1a,#2d6a2d)!important;box-shadow:0 0 40px rgba(45,106,45,0.4)!important}
-.btn-android:hover{box-shadow:0 8px 60px rgba(45,106,45,0.6)!important}
-.freq-wave{position:absolute;bottom:0;left:0;right:0;height:160px;overflow:hidden}
-.freq-wave svg{width:100%;height:100%}
-.divider{width:100%;height:1px;background:linear-gradient(to right,transparent,rgba(155,105,245,0.3),transparent)}
-section{position:relative}
-.section-inner{max-width:1200px;margin:0 auto;padding:100px 40px}
-.section-label{font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:16px}
-.section-label::before{content:"";width:30px;height:1px;background:var(--gold)}
-.guides-section{background:linear-gradient(to bottom,var(--void),var(--deep))}
-.guides-heading{text-align:center;margin-bottom:64px}
-.guides-heading h2{font-family:"Cinzel",serif;font-size:clamp(28px,4vw,52px);font-weight:400;letter-spacing:0.08em;color:var(--white);margin-bottom:16px}
-.guides-heading p{font-family:"Cormorant Garamond",serif;font-size:20px;font-style:italic;color:rgba(232,228,240,0.6)}
-.guides-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
-.guide-card{position:relative;overflow:hidden;aspect-ratio:3/4}
-.guide-card img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 0.8s ease}
-.guide-card:hover img{transform:scale(1.03)}
-.guide-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,3,10,0.95) 0%,rgba(4,3,10,0.2) 50%,transparent 100%)}
-.guide-info{position:absolute;bottom:0;left:0;right:0;padding:40px}
-.guide-name{font-family:"Cinzel",serif;font-size:36px;font-weight:600;letter-spacing:0.15em;color:var(--white);margin-bottom:8px}
-.guide-title{font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
-.guide-desc{font-family:"Cormorant Garamond",serif;font-size:18px;font-style:italic;color:rgba(232,228,240,0.7);line-height:1.6}
-.guide-qualities{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
-.quality-tag{font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--purple-light);border:1px solid rgba(155,105,245,0.3);padding:5px 10px;border-radius:2px}
-.frequency-section{background:var(--deep)}
-.freq-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(155,105,245,0.1);border:1px solid rgba(155,105,245,0.1);margin-top:48px}
-.freq-card{background:var(--deep);padding:40px 20px;text-align:center;transition:background 0.3s}
-.freq-card:hover{background:var(--veil)}
-.freq-hz{font-family:"Cinzel",serif;font-size:32px;font-weight:600;color:var(--violet);margin-bottom:4px}
-.freq-unit{font-size:10px;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
-.freq-name{font-family:"Cormorant Garamond",serif;font-size:16px;font-style:italic;color:var(--platinum);margin-bottom:8px}
-.freq-effect{font-size:11px;color:rgba(232,228,240,0.5);line-height:1.6}
-.sessions-section{background:linear-gradient(to bottom,var(--deep),var(--chamber))}
-.sessions-split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.sessions-visual{position:relative;border-radius:4px;overflow:hidden;border:1px solid rgba(155,105,245,0.15)}
-.sessions-visual img{width:100%;display:block}
-.sessions-text h2{font-family:"Cinzel",serif;font-size:clamp(26px,3vw,44px);font-weight:400;letter-spacing:0.08em;color:var(--white);margin-bottom:24px;line-height:1.2}
-.sessions-text p{font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.8;color:rgba(232,228,240,0.7);margin-bottom:40px}
-.session-list{display:flex;flex-direction:column;gap:16px}
-.session-item{display:flex;align-items:flex-start;gap:20px;padding:20px;border:1px solid rgba(155,105,245,0.1);border-radius:4px;background:rgba(155,105,245,0.04);transition:all 0.3s}
-.session-item:hover{border-color:rgba(155,105,245,0.3);background:rgba(155,105,245,0.08)}
-.session-time{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:2px;min-width:80px}
-.session-name{font-family:"Cinzel",serif;font-size:14px;letter-spacing:0.1em;color:var(--white);margin-bottom:4px}
-.session-desc{font-size:12px;color:rgba(232,228,240,0.5);line-height:1.5}
-.program-section{background:var(--chamber)}
-.program-heading{text-align:center;margin-bottom:64px}
-.program-heading h2{font-family:"Cinzel",serif;font-size:clamp(28px,4vw,52px);font-weight:400;letter-spacing:0.08em;color:var(--white);margin-bottom:16px}
-.program-heading p{font-family:"Cormorant Garamond",serif;font-size:20px;font-style:italic;color:rgba(232,228,240,0.6)}
-.program-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(155,105,245,0.1);border:1px solid rgba(155,105,245,0.1);margin-bottom:60px}
-.program-step{background:var(--chamber);padding:48px 32px;transition:background 0.3s}
-.program-step:hover{background:var(--veil)}
-.step-number{font-family:"Cinzel",serif;font-size:48px;font-weight:400;color:rgba(155,105,245,0.15);line-height:1;margin-bottom:20px}
-.step-title{font-family:"Cinzel",serif;font-size:16px;letter-spacing:0.1em;color:var(--white);margin-bottom:12px}
-.step-desc{font-family:"Cormorant Garamond",serif;font-size:18px;font-style:italic;color:rgba(232,228,240,0.6);line-height:1.7}
-.cta-section{background:linear-gradient(to bottom,var(--chamber),var(--void));text-align:center}
-.cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(ellipse,rgba(107,53,212,0.3) 0%,transparent 70%);pointer-events:none}
-.cta-section h2{font-family:"Cinzel",serif;font-size:clamp(32px,5vw,64px);font-weight:400;letter-spacing:0.06em;color:var(--white);margin-bottom:24px;line-height:1.1}
-.email-section{background:var(--void);border-top:1px solid rgba(155,105,245,0.1);border-bottom:1px solid rgba(155,105,245,0.1)}
-.email-inner{max-width:600px;margin:0 auto;padding:80px 40px;text-align:center}
-.email-inner h3{font-family:"Cinzel",serif;font-size:24px;letter-spacing:0.1em;color:var(--white);margin-bottom:12px}
-.email-inner p{font-family:"Cormorant Garamond",serif;font-size:18px;font-style:italic;color:rgba(232,228,240,0.6);margin-bottom:32px}
-.email-form{display:flex;gap:8px}
-.email-form input{flex:1;background:rgba(255,255,255,0.04);border:1px solid rgba(155,105,245,0.2);color:var(--white);padding:16px 20px;font-family:"Jost",sans-serif;font-size:13px;letter-spacing:0.05em;outline:none;border-radius:2px;transition:border-color 0.3s}
-.email-form input:focus{border-color:rgba(155,105,245,0.5)}
-.email-form input::placeholder{color:rgba(232,228,240,0.3)}
-.email-form button{background:linear-gradient(135deg,var(--purple-mid),var(--purple));color:var(--white);border:none;padding:16px 32px;font-family:"Jost",sans-serif;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all 0.3s;white-space:nowrap}
-.email-form button:hover{box-shadow:0 4px 30px rgba(107,53,212,0.5);transform:translateY(-1px)}
-footer{background:var(--void);padding:60px 40px}
-.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;align-items:start;gap:40px}
-.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.footer-brand img{width:28px;height:28px;object-fit:contain}
-.footer-brand span{font-family:"Cinzel",serif;font-size:16px;letter-spacing:0.2em;color:var(--white)}
-.footer-tagline{font-family:"Cormorant Garamond",serif;font-size:15px;font-style:italic;color:rgba(232,228,240,0.4);margin-bottom:24px}
-.footer-legal{font-size:11px;color:rgba(232,228,240,0.25)}
-.footer-legal a{color:rgba(232,228,240,0.4);text-decoration:none}
-.footer-links{display:flex;flex-direction:column;gap:12px;text-align:right}
-.footer-links a{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(232,228,240,0.4);text-decoration:none;transition:color 0.3s}
-.footer-links a:hover{color:var(--violet)}
-.free-banner{background:rgba(212,168,83,0.08);border:1px solid rgba(212,168,83,0.2);border-radius:4px;padding:16px 24px;text-align:center;margin-bottom:32px}
-.free-banner a{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none}
-.free-banner a:hover{color:var(--gold-light)}
-@media(max-width:768px){nav{padding:16px 20px}.nav-links{display:none}.section-inner{padding:60px 20px}.guides-grid{grid-template-columns:1fr}.guide-card{aspect-ratio:4/5}.freq-grid{grid-template-columns:repeat(2,1fr)}.sessions-split{grid-template-columns:1fr;gap:40px}.program-steps{grid-template-columns:1fr}.hero-hz{gap:8px}.hero-ctas{flex-direction:column;align-items:center}.email-form{flex-direction:column}.footer-inner{grid-template-columns:1fr}.footer-links{text-align:left}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY SEO META TAGS -->
+  <title>Aethura — Frequency Healing & Guided Meditation App | 528Hz, 432Hz, Solfeggio</title>
+  <meta name="description" content="Raise your frequency with Aethura — guided meditation, binaural beats, and solfeggio frequency healing. 528Hz, 432Hz, 396Hz, 963Hz. Available on iOS and Android. Start your 7-day free trial.">
+  <meta name="keywords" content="frequency healing app, solfeggio frequencies, 528hz meditation, 432hz app, binaural beats, guided meditation app, raise your vibration, healing frequencies, 396hz, 963hz, sound healing, frequency meditation, binaural beats app, manifestation meditation, spiritual meditation app">
+  <meta name="author" content="Aethura">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aethura.app/">
+
+  <!-- OPEN GRAPH (Facebook, Instagram, LinkedIn sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aethura.app/">
+  <meta property="og:title" content="Aethura — Raise Your Frequency with Sound Healing & Guided Meditation">
+  <meta property="og:description" content="Guided meditation with solfeggio frequencies and binaural beats. 528Hz, 432Hz, 396Hz, 963Hz. Start your 10-day Raise Your Frequency program free for 7 days.">
+  <meta property="og:image" content="https://aethura.app/og-image.jpg">
+  <meta property="og:site_name" content="Aethura">
+  <meta property="og:locale" content="en_US">
+
+  <!-- TWITTER/X CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://aethura.app/">
+  <meta name="twitter:title" content="Aethura — Raise Your Frequency with Sound Healing & Guided Meditation">
+  <meta name="twitter:description" content="Guided meditation with solfeggio frequencies and binaural beats. 528Hz, 432Hz, 396Hz, 963Hz. Start your 10-day Raise Your Frequency program free for 7 days.">
+  <meta name="twitter:image" content="https://aethura.app/og-image.jpg">
+
+  <!-- APP STORE META TAGS -->
+  <meta name="apple-itunes-app" content="app-id=6763807830">
+  <meta name="google-play-app" content="app-id=com.aethuraapp.app">
+
+  <!-- SCHEMA MARKUP (Google + AI Search Engines) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Aethura",
+    "description": "Guided meditation app with solfeggio frequency healing, binaural beats, and a 10-day Raise Your Frequency program. Features 528Hz, 432Hz, 396Hz, 417Hz, and 963Hz healing frequencies with two AI voice guides.",
+    "url": "https://aethura.app",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": ["iOS", "Android"],
+    "offers": {
+      "@type": "Offer",
+      "price": "14.99",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-12-31",
+      "description": "Monthly subscription with 7-day free trial"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "10"
+    },
+    "featureList": [
+      "528Hz Love Frequency",
+      "432Hz Harmony Frequency",
+      "396Hz Release Frequency",
+      "417Hz Change Frequency",
+      "963Hz Enlightenment Frequency",
+      "Binaural beats",
+      "Guided meditation",
+      "10-day Raise Your Frequency program",
+      "Male and female voice guides",
+      "Sleep meditation"
+    ],
+    "screenshot": "https://aethura.app/og-image.jpg",
+    "softwareVersion": "1.1",
+    "datePublished": "2025-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aethura",
+      "url": "https://aethura.app"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Aethura",
+    "url": "https://aethura.app",
+    "logo": "https://aethura.app/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/aethura.app",
+      "https://www.tiktok.com/@aethuraapp"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@aethura.app",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Aethura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aethura is a guided meditation and frequency healing app that uses solfeggio frequencies (528Hz, 432Hz, 396Hz, 417Hz, 963Hz) and binaural beats to help you raise your vibration, improve sleep, release stress, and transform your life. Available on iOS and Android."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are solfeggio frequencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Solfeggio frequencies are specific sound frequencies used in meditation and sound healing. Key frequencies include 528Hz (love and DNA repair), 432Hz (harmony and calm), 396Hz (releasing fear and guilt), 417Hz (facilitating change), and 963Hz (higher consciousness and enlightenment)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Raise Your Frequency program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Raise Your Frequency program is a 10-day guided journey in the Aethura app. Each day includes a guided frequency healing session with binaural beats, designed to progressively raise your vibration and help you attract more of what you want in life."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Aethura cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aethura costs $14.99 per month with a 7-day free trial. You can cancel anytime. The subscription includes access to all guided frequency sessions, the 10-day program, and the full healing audio library."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Aethura available on iPhone and Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — Aethura is available on both iOS (iPhone and iPad) via the App Store and Android via Google Play."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -130,6 +165,7 @@ footer{background:var(--void);padding:60px 40px}
     <li><a href="#sessions">Sessions</a></li>
     <li><a href="#program">Program</a></li>
     <li><a href="#frequency">Frequency</a></li>
+    <li><a href="blog.html">Blog</a></li>
   </ul>
   <a href="#download" class="nav-cta">Begin Free Trial</a>
 </nav>
