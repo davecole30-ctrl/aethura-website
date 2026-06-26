@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Close More. Stress Less. — Your Program is Ready</title>
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z2TM68V79"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9Z2TM68V79');
+  // Track purchase conversion
+  gtag('event', 'purchase', {
+    'transaction_id': new URLSearchParams(window.location.search).get('session_id') || 'direct',
+    'value': 47.00,
+    'currency': 'USD'
+  });
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #0f1923;
+    --navy-mid: #1a2535;
+    --gold: #c8a45a;
+    --gold-light: #dfc07a;
+    --gold-pale: #f5edd8;
+    --cream: #faf7f2;
+    --white: #ffffff;
+    --text: #2d3748;
+    --text-light: #718096;
+    --green: #27ae60;
+    --border: #e8e0d0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--navy);
+    padding: 60px 24px 48px;
+    text-align: center;
+    border-bottom: 1px solid rgba(200,164,90,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(200,164,90,0.12) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .success-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39,174,96,0.15);
+    border: 1px solid rgba(39,174,96,0.4);
+    color: #5dde8a;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    margin-bottom: 24px;
+    border-radius: 100px;
+  }
+  .success-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #5dde8a;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .hero h1 em { color: var(--gold); font-style: italic; }
+  .hero-sub {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+    max-width: 560px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+  }
+  .from-dave {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(200,164,90,0.08);
+    border: 1px solid rgba(200,164,90,0.2);
+    padding: 12px 20px;
+    margin-top: 8px;
+  }
+  .from-dave img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 15%;
+    border: 2px solid var(--gold);
+  }
+  .from-dave-text {
+    text-align: left;
+  }
+  .from-dave-text strong {
+    display: block;
+    font-size: 13px;
+    color: var(--white);
+  }
+  .from-dave-text span {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.05em;
+  }
+
+  /* WELCOME MESSAGE */
+  .welcome-section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 0;
+  }
+  .welcome-card {
+    background: rgba(200,164,90,0.06);
+    border: 1px solid rgba(200,164,90,0.2);
+    border-left: 4px solid var(--gold);
+    padding: 28px 32px;
+    margin-bottom: 48px;
+  }
+  .welcome-card p {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+  .welcome-card p:last-child { margin-bottom: 0; }
+  .welcome-card p strong { color: var(--gold); font-style: normal; }
+
+  /* SECTION HEADERS */
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+    display: block;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+
+  /* QUICK START */
+  .quick-start {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+  }
+  .start-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .start-step {
+    background: var(--navy-mid);
+    border: 1px solid rgba(200,164,90,0.15);
+    padding: 20px;
+    text-align: center;
+  }
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: rgba(200,164,90,0.3);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .start-step h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .start-step p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+  }
+
+  /* DOWNLOAD SECTIONS */
+  .downloads {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+  }
+
+  .download-group {
+    margin-bottom: 40px;
+  }
+
+  .download-item {
+    background: var(--navy-mid);
+    border: 1px solid rgba(200,164,90,0.15);
+    border-left: 3px solid var(--gold);
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .download-item:hover {
+    background: rgba(200,164,90,0.08);
+    border-left-color: var(--gold-light);
+  }
+  .download-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    width: 40px;
+    text-align: center;
+  }
+  .download-info { flex: 1; }
+  .download-info strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 3px;
+  }
+  .download-info span {
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .download-arrow {
+    font-size: 16px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  /* AUDIO PLAYER ITEMS */
+  .audio-item {
+    background: var(--navy-mid);
+    border: 1px solid rgba(200,164,90,0.15);
+    padding: 16px 20px;
+    margin-bottom: 10px;
+  }
+  .audio-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .audio-icon { font-size: 20px; flex-shrink: 0; }
+  .audio-info strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 2px;
+  }
+  .audio-info span {
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  audio {
+    width: 100%;
+    height: 36px;
+    border-radius: 0;
+    background: rgba(255,255,255,0.05);
+  }
+  audio::-webkit-media-controls-panel {
+    background: rgba(255,255,255,0.05);
+  }
+
+  /* SONG SECTION */
+  .song-item {
+    background: rgba(200,164,90,0.06);
+    border: 1px solid rgba(200,164,90,0.25);
+    padding: 20px;
+    margin-bottom: 12px;
+  }
+  .song-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  .song-header img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(200,164,90,0.5);
+    flex-shrink: 0;
+  }
+  .song-header strong {
+    display: block;
+    font-size: 15px;
+    color: var(--white);
+    margin-bottom: 3px;
+  }
+  .song-header span {
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* APP BRIDGE */
+  .app-bridge {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+  }
+  .app-bridge-card {
+    background: linear-gradient(135deg, #1a0a3a, #0f1923);
+    border: 1px solid rgba(155,105,245,0.2);
+    padding: 36px 32px;
+    text-align: center;
+  }
+  .app-bridge-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+  .app-bridge-card p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .app-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .app-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+  }
+  .app-btn-ios { background: rgba(155,105,245,0.8); color: white; }
+  .app-btn-android { background: transparent; color: rgba(155,105,245,0.9); border: 1px solid rgba(155,105,245,0.5); }
+
+  /* SUPPORT */
+  .support {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+    text-align: center;
+  }
+  .support p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.7;
+  }
+  .support a { color: var(--gold); text-decoration: none; }
+  .support a:hover { color: var(--gold-light); }
+
+  /* DIVIDER */
+  .divider {
+    max-width: 760px;
+    margin: 0 auto 40px;
+    padding: 0 24px;
+  }
+  .divider hr {
+    border: none;
+    border-top: 1px solid rgba(200,164,90,0.15);
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 40px 20px 36px; }
+    .welcome-card { padding: 20px; }
+    .download-item { flex-wrap: wrap; }
+    .start-steps { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="success-badge">
+    <div class="success-dot"></div>
+    Payment Confirmed
+  </div>
+  <h1>Welcome to<br><em>Close More. Stress Less.</em></h1>
+  <p class="hero-sub">
+    Your complete program is ready below. Bookmark this page — everything you need is right here.
+  </p>
+  <div class="from-dave">
+    <img src="dave-cole-avatar.jpg" alt="Dave Cole">
+    <div class="from-dave-text">
+      <strong>Dave Cole</strong>
+      <span>REI & REO Realty LLC · 25+ Years</span>
+    </div>
+  </div>
+</div>
+
+<!-- WELCOME MESSAGE -->
+<div class="welcome-section">
+  <div class="welcome-card">
+    <p>Welcome to the program. I'm genuinely glad you're here.</p>
+    <p>
+      What you have below is everything I wish someone had given me in my first decade of real estate. Not another script. Not another system. A way to actually <strong>recover</strong> from the mental and emotional load of this business — and show up for your clients as the agent you know you're capable of being.
+    </p>
+    <p>
+      Start with the <strong>Quick Start Guide</strong> — it tells you exactly what to do on each of the first five days. Then follow the sequence. Don't skip around. The order matters.
+    </p>
+    <p>
+      If you have any questions — email me directly at <strong>hello@aethura.app</strong>. I read every message.
+    </p>
+    <p style="margin-top:16px;font-style:normal;font-size:14px;color:rgba(255,255,255,0.5);">— Dave</p>
+  </div>
+</div>
+
+<!-- QUICK START -->
+<div class="quick-start">
+  <span class="section-label">Start Here</span>
+  <div class="section-title">Your 5-Day Reset Starts Today</div>
+  <div class="start-steps">
+    <div class="start-step">
+      <div class="step-num">1</div>
+      <h4>Download the Quick Start Guide</h4>
+      <p>Read it first — it tells you exactly what to do each day</p>
+    </div>
+    <div class="start-step">
+      <div class="step-num">2</div>
+      <h4>Get Headphones</h4>
+      <p>Essential for binaural beats — earbuds or over-ear both work</p>
+    </div>
+    <div class="start-step">
+      <div class="step-num">3</div>
+      <h4>Day 1 Tonight</h4>
+      <p>Read Module 1, then listen to the Morning Routine tomorrow</p>
+    </div>
+    <div class="start-step">
+      <div class="step-num">4</div>
+      <h4>Bookmark This Page</h4>
+      <p>All your sessions and guides live here — come back anytime</p>
+    </div>
+  </div>
+
+  <!-- Quick Start PDF -->
+  <a href="/cmsl/CMSL-Quick-Start-5-Day-Protocol.pdf" download class="download-item">
+    <span class="download-icon">⚡</span>
+    <div class="download-info">
+      <strong>Quick Start — 5-Day Agent Reset Protocol</strong>
+      <span>PDF · Start here · Download &amp; read first</span>
+    </div>
+    <span class="download-arrow">↓</span>
+  </a>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- PDF GUIDES -->
+<div class="downloads">
+  <span class="section-label">PDF Guides</span>
+  <div class="section-title">Your Workbooks &amp; Reference Guides</div>
+
+  <a href="/cmsl/CMSL-Module-01-Realtor-Stress-Cycle.pdf" download class="download-item">
+    <span class="download-icon">📄</span>
+    <div class="download-info">
+      <strong>Module 1 — Understanding the Realtor Stress Cycle</strong>
+      <span>PDF · Read on Day 1 · Includes anxiety checklist</span>
+    </div>
+    <span class="download-arrow">↓</span>
+  </a>
+
+  <a href="/cmsl/CMSL-Module-03-Programming-Your-Mind.pdf" download class="download-item">
+    <span class="download-icon">📄</span>
+    <div class="download-info">
+      <strong>Module 3 — Programming Your Mind for Production</strong>
+      <span>PDF · Read on Day 2 · Includes belief rewrite exercises</span>
+    </div>
+    <span class="download-arrow">↓</span>
+  </a>
+
+  <a href="/cmsl/CMSL-Module-05-Abundance-vs-Scarcity.pdf" download class="download-item">
+    <span class="download-icon">📄</span>
+    <div class="download-info">
+      <strong>Module 5 — Abundance vs Scarcity</strong>
+      <span>PDF · Read on Day 4 · Includes scarcity diagnostic</span>
+    </div>
+    <span class="download-arrow">↓</span>
+  </a>
+
+  <a href="/cmsl/CMSL-Bonus-04-Gratitude-Journal.pdf" download class="download-item">
+    <span class="download-icon">📓</span>
+    <div class="download-info">
+      <strong>Bonus 4 — Realtor Gratitude Journal</strong>
+      <span>PDF · Print &amp; use daily · Includes weekly review pages</span>
+    </div>
+    <span class="download-arrow">↓</span>
+  </a>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- AUDIO SESSIONS -->
+<div class="downloads">
+  <span class="section-label">Audio Sessions</span>
+  <div class="section-title">Your 7 Guided Sessions — Use Headphones</div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">🌅</span>
+      <div class="audio-info">
+        <strong>Module 2 — Morning Success Routine</strong>
+        <span>8 min · 417Hz · Use every morning before prospecting</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_01_morning_success.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">🧠</span>
+      <div class="audio-info">
+        <strong>Module 3 — Programming Your Mind (432Hz)</strong>
+        <span>15 min · 432Hz · Use on Day 2 after reading the PDF</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_03_mind_for_production.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">💔</span>
+      <div class="audio-info">
+        <strong>Module 4 — The Rejection Reset</strong>
+        <span>20 min · 396Hz · Use after a difficult day or lost listing</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_02_rejection_reset.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">✨</span>
+      <div class="audio-info">
+        <strong>Module 5 — Abundance Activation</strong>
+        <span>18 min · 528Hz · Use before listing appointments</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_04_abundance_activation.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">🏆</span>
+      <div class="audio-info">
+        <strong>Module 7 — Peak Performance Visualization</strong>
+        <span>12 min · 432Hz · Use before important appointments</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_05_peak_performance.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">🌙</span>
+      <div class="audio-info">
+        <strong>Module 6 — Sleep Like a Top Producer</strong>
+        <span>20 min · 396Hz + Theta · Use every night before sleep</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/tonight_before_sleep_aura.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- BONUSES -->
+<div class="downloads">
+  <span class="section-label">Your 5 Bonuses</span>
+  <div class="section-title">Pull These Up On Your Phone When You Need Them</div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">☀️</span>
+      <div class="audio-info">
+        <strong>Bonus 1 — Realtor Morning Audio</strong>
+        <span>5 min · 417Hz · Listen right before prospecting</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_06_realtor_morning_bonus.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">⚡</span>
+      <div class="audio-info">
+        <strong>Bonus 2 — Confidence Reset</strong>
+        <span>3 min · 528Hz · Listen in your car before walking in</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_07_confidence_reset_bonus.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">🌙</span>
+      <div class="audio-info">
+        <strong>Bonus 3 — Night Reset</strong>
+        <span>10 min · 396Hz · Quick decompress before bed</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_09_night_reset_bonus.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <a href="/cmsl/CMSL-Bonus-04-Gratitude-Journal.pdf" download class="download-item">
+    <span class="download-icon">📓</span>
+    <div class="download-info">
+      <strong>Bonus 4 — Realtor Gratitude Journal</strong>
+      <span>PDF · Print it · Use daily</span>
+    </div>
+    <span class="download-arrow">↓</span>
+  </a>
+
+  <div class="audio-item">
+    <div class="audio-header">
+      <span class="audio-icon">🔄</span>
+      <div class="audio-info">
+        <strong>Bonus 5 — Breaking the Feast/Famine Cycle</strong>
+        <span>15 min · 528Hz · Use when stuck in the cycle</span>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_08_feast_famine_bonus.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- THE SIGNAL SONG -->
+<div class="downloads">
+  <span class="section-label">Your Bonus Song</span>
+  <div class="section-title">The Signal — Your Realtor Anthem</div>
+  <p style="font-size:15px;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:24px;">Listen while driving to your next appointment. Both voice versions included.</p>
+
+  <div class="song-item">
+    <div class="song-header">
+      <img src="https://aethura.app/Aura_TH_Green.png" alt="Aura">
+      <div>
+        <strong>The Signal — Aura Version</strong>
+        <span>Female Voice · 432Hz</span>
+      </div>
+    </div>
+    <audio controls preload="none" style="width:100%;">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_the_signal_aura.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="song-item">
+    <div class="song-header">
+      <img src="https://aethura.app/Aether_White.png" alt="Aether">
+      <div>
+        <strong>The Signal — Aether Version</strong>
+        <span>Male Voice · 432Hz</span>
+      </div>
+    </div>
+    <audio controls preload="none" style="width:100%;">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_the_signal_aether.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- APP BRIDGE -->
+<div class="app-bridge">
+  <div class="app-bridge-card">
+    <h3>Want to Go Even Deeper?</h3>
+    <p>
+      The Aethura app includes a complete 10-day Raise Your Frequency program with daily guided sessions, healing frequencies, and a full audio library. Your first 7 days are completely free.
+    </p>
+    <div class="app-btns">
+      <a href="https://apps.apple.com/app/id6763807830" class="app-btn app-btn-ios">🍎 App Store — Free Trial</a>
+      <a href="https://play.google.com/store/apps/details?id=com.aethuraapp.app" class="app-btn app-btn-android">🤖 Google Play — Free Trial</a>
+    </div>
+  </div>
+</div>
+
+<!-- SUPPORT -->
+<div class="support">
+  <p>
+    Questions about your program? Email Dave directly at <a href="mailto:hello@aethura.app">hello@aethura.app</a><br>
+    <span style="font-size:12px;margin-top:4px;display:block;">© 2026 REI & REO Realty LLC · Close More. Stress Less. Program</span>
+  </p>
+</div>
+
+</body>
+</html>
