@@ -5,14 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close More. Stress Less. — The Mental Performance System for Realtors</title>
 <meta name="description" content="The first mental performance system designed specifically for real estate agents. Stop carrying stress into appointments. Break the feast/famine cycle. Close more deals by training your most important asset — your mind.">
-<meta name="keywords" content="realtor mental performance, real estate agent stress, close more stress less, realtor confidence, feast famine cycle real estate, real estate mental training">
 <meta property="og:title" content="Close More. Stress Less. — The Mental Performance System for Realtors">
-<meta property="og:description" content="The first mental performance system designed specifically for real estate agents. Built by a 25-year Realtor veteran.">
+<meta property="og:description" content="Your clients experience your state of mind before they experience your presentation. The first mental performance system built specifically for Realtors.">
 <meta property="og:url" content="https://aethura.app/realtors">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://aethura.app/dave-cole-realtor.png">
 
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z2TM68V79"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -26,144 +24,186 @@
 
 <style>
 :root {
-  --navy: #0f1923;
-  --navy-mid: #1a2535;
-  --gold: #c8a45a;
-  --gold-light: #dfc07a;
-  --gold-pale: #f5edd8;
-  --cream: #faf7f2;
-  --white: #ffffff;
-  --text: #2d3748;
-  --text-light: #718096;
-  --border: #e8e0d0;
+  --navy:#0f1923; --navy-mid:#1a2535; --gold:#c8a45a; --gold-light:#dfc07a;
+  --gold-pale:#f5edd8; --cream:#faf7f2; --white:#ffffff;
+  --text:#2d3748; --text-light:#718096; --border:#e8e0d0;
 }
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--text); line-height:1.7; }
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--text);line-height:1.7;}
 
 /* HEADER */
-.header { background:var(--navy); padding:16px 40px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(200,164,90,0.2); }
-.header-logo { font-family:'Playfair Display',serif; font-size:13px; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); text-decoration:none; }
-.header-cta { background:var(--gold); color:var(--navy); padding:10px 24px; font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none; }
+.header{background:var(--navy);padding:16px 40px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(200,164,90,0.2);}
+.header-logo{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);text-decoration:none;}
+.header-cta{background:var(--gold);color:var(--navy);padding:10px 24px;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;}
 
 /* HERO */
-.hero { background:var(--navy); padding:80px 24px 70px; text-align:center; position:relative; overflow:hidden; }
-.hero::before { content:''; position:absolute; top:0; left:0; right:0; bottom:0; background:radial-gradient(ellipse at 50% 0%, rgba(200,164,90,0.1) 0%, transparent 65%); pointer-events:none; }
-.hero-eyebrow { display:inline-block; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); margin-bottom:20px; padding:6px 16px; border:1px solid rgba(200,164,90,0.3); }
-.hero h1 { font-family:'Playfair Display',serif; font-size:clamp(14px,2vw,18px); font-weight:400; color:rgba(255,255,255,0.6); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:16px; }
-.hero h2 { font-family:'Playfair Display',serif; font-size:clamp(36px,6vw,72px); font-weight:900; color:var(--white); line-height:1.05; margin-bottom:24px; letter-spacing:-0.02em; }
-.hero h2 em { color:var(--gold); font-style:italic; }
-.hero-sub { font-size:clamp(16px,2vw,20px); color:rgba(255,255,255,0.7); max-width:680px; margin:0 auto 40px; line-height:1.7; }
-.hero-btn { display:inline-block; background:var(--gold); color:var(--navy); font-size:14px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:20px 48px; text-decoration:none; transition:all 0.2s; margin-bottom:16px; }
-.hero-btn:hover { background:var(--gold-light); }
-.hero-guarantee { font-size:13px; color:rgba(255,255,255,0.4); letter-spacing:0.05em; }
+.hero{background:var(--navy);padding:80px 24px 60px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(200,164,90,0.1) 0%,transparent 65%);pointer-events:none;}
+.hero-eyebrow{display:inline-block;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;padding:6px 16px;border:1px solid rgba(200,164,90,0.3);}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(14px,2vw,17px);font-weight:400;color:rgba(255,255,255,0.55);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:16px;}
+.hero h2{font-family:'Playfair Display',serif;font-size:clamp(38px,6vw,74px);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:20px;letter-spacing:-0.02em;}
+.hero h2 em{color:var(--gold);font-style:italic;}
+.hero-million{font-family:'Playfair Display',serif;font-size:clamp(17px,2.5vw,22px);color:rgba(255,255,255,0.85);max-width:700px;margin:0 auto 36px;line-height:1.65;font-style:italic;}
+.hero-million em{color:var(--gold);font-style:normal;}
+.hero-btn{display:inline-block;background:var(--gold);color:var(--navy);font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:20px 48px;text-decoration:none;transition:all 0.2s;margin-bottom:16px;}
+.hero-btn:hover{background:var(--gold-light);}
+.hero-guarantee{font-size:13px;color:rgba(255,255,255,0.4);letter-spacing:0.05em;}
 
 /* PROOF BAR */
-.proof-bar { background:var(--navy-mid); border-top:1px solid rgba(200,164,90,0.15); border-bottom:1px solid rgba(200,164,90,0.15); padding:24px 40px; display:flex; justify-content:center; gap:60px; flex-wrap:wrap; }
-.proof-item { text-align:center; }
-.proof-item strong { display:block; font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:var(--gold); }
-.proof-item span { font-size:11px; color:rgba(255,255,255,0.5); letter-spacing:0.1em; text-transform:uppercase; }
+.proof-bar{background:var(--navy-mid);border-top:1px solid rgba(200,164,90,0.15);border-bottom:1px solid rgba(200,164,90,0.15);padding:24px 40px;display:flex;justify-content:center;gap:60px;flex-wrap:wrap;}
+.proof-item{text-align:center;}
+.proof-item strong{display:block;font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:var(--gold);}
+.proof-item span{font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;}
 
-/* SECTIONS */
-.section { padding:80px 24px; }
-.section-inner { max-width:860px; margin:0 auto; }
-.section-dark { background:var(--navy); }
-.section-cream { background:var(--cream); }
-.section-white { background:var(--white); }
-.section-label { font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:12px; }
-.section-title { font-family:'Playfair Display',serif; font-size:clamp(28px,4vw,44px); font-weight:700; line-height:1.2; margin-bottom:24px; }
-.section-dark .section-title { color:var(--white); }
-.section-cream .section-title, .section-white .section-title { color:var(--navy); }
+/* NOBODY TEACHES */
+.nobody{background:var(--white);padding:72px 24px;}
+.nobody-inner{max-width:760px;margin:0 auto;}
+.nobody h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);font-weight:900;color:var(--navy);margin-bottom:32px;line-height:1.2;}
+.nobody-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:32px;border:1px solid var(--border);}
+.nobody-col{padding:28px 32px;}
+.nobody-col:first-child{border-right:1px solid var(--border);}
+.nobody-col h3{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-light);margin-bottom:16px;}
+.nobody-col ul{list-style:none;padding:0;}
+.nobody-col ul li{font-size:15px;color:var(--text);padding:7px 0;border-bottom:1px solid var(--border);padding-left:22px;position:relative;}
+.nobody-col ul li::before{position:absolute;left:0;font-weight:700;}
+.nobody-col.has li::before{content:'✓';color:var(--gold);}
+.nobody-col.missing li::before{content:'✗';color:#e53e3e;}
+.nobody-bridge{background:var(--navy);padding:28px 32px;border-left:4px solid var(--gold);}
+.nobody-bridge p{font-size:17px;color:rgba(255,255,255,0.9);line-height:1.8;}
+.nobody-bridge strong{color:var(--gold);}
 
-/* PAIN SECTION */
-.pain-lines { margin:32px 0; }
-.pain-month { margin-bottom:32px; }
-.pain-month h3 { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; color:var(--gold); margin-bottom:12px; font-style:italic; }
-.pain-line { font-size:17px; color:rgba(255,255,255,0.75); line-height:1.9; padding-left:16px; border-left:2px solid rgba(200,164,90,0.2); margin-bottom:6px; }
-.pain-bridge { font-family:'Playfair Display',serif; font-size:22px; color:var(--white); font-style:italic; text-align:center; padding:32px; border-top:1px solid rgba(200,164,90,0.15); border-bottom:1px solid rgba(200,164,90,0.15); margin:40px 0; line-height:1.6; }
-.pain-bridge em { color:var(--gold); }
-
-/* ATHLETES SECTION */
-.athlete-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:16px; margin:32px 0; }
-.athlete-item { background:rgba(200,164,90,0.06); border:1px solid rgba(200,164,90,0.15); padding:20px 16px; text-align:center; }
-.athlete-item .athlete-icon { font-size:28px; margin-bottom:8px; display:block; }
-.athlete-item strong { display:block; font-size:13px; font-weight:600; color:var(--white); margin-bottom:4px; }
-.athlete-item span { font-size:11px; color:rgba(255,255,255,0.5); }
-.athlete-bridge { font-size:18px; color:rgba(255,255,255,0.8); line-height:1.8; margin-top:32px; padding:24px 28px; border-left:4px solid var(--gold); background:rgba(200,164,90,0.06); }
-.athlete-bridge strong { color:var(--gold); }
-
-/* IMAGINE SECTION */
-.imagine-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:32px 0; }
-.imagine-item { background:var(--navy-mid); border:1px solid rgba(200,164,90,0.15); border-left:3px solid var(--gold); padding:16px 20px; }
-.imagine-item strong { display:block; font-size:15px; font-weight:600; color:var(--white); margin-bottom:4px; }
-.imagine-item span { font-size:13px; color:rgba(255,255,255,0.55); line-height:1.5; }
-
-/* SESSIONS */
-.sessions-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin:32px 0; }
-.session-card { background:var(--white); border:1px solid var(--border); border-top:3px solid var(--gold); padding:24px; }
-.session-card .session-num { font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; display:block; }
-.session-card h3 { font-family:'Playfair Display',serif; font-size:19px; font-weight:700; color:var(--navy); margin-bottom:8px; }
-.session-card p { font-size:14px; color:var(--text-light); line-height:1.6; margin-bottom:12px; }
-.session-card .session-time { font-size:11px; color:var(--text-light); letter-spacing:0.1em; text-transform:uppercase; }
-
-/* BONUSES */
-.bonus-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin:32px 0; }
-.bonus-card { background:var(--navy-mid); border:1px solid rgba(200,164,90,0.15); padding:24px; }
-.bonus-card .bonus-icon { font-size:28px; margin-bottom:12px; display:block; }
-.bonus-card h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:700; color:var(--white); margin-bottom:8px; }
-.bonus-card p { font-size:13px; color:rgba(255,255,255,0.6); line-height:1.6; margin-bottom:12px; }
-.bonus-card .bonus-time { font-size:11px; color:var(--gold); letter-spacing:0.1em; text-transform:uppercase; }
-
-/* SONG PREVIEW */
-.song-preview { background:rgba(200,164,90,0.06); border:1px solid rgba(200,164,90,0.2); padding:28px 32px; margin:16px 0; }
-.song-header { display:flex; align-items:center; gap:16px; margin-bottom:16px; flex-wrap:wrap; }
-.song-header img { width:52px; height:52px; border-radius:50%; object-fit:cover; border:2px solid rgba(200,164,90,0.5); flex-shrink:0; }
-.song-header strong { display:block; font-size:15px; color:var(--white); margin-bottom:3px; }
-.song-header span { font-size:11px; color:var(--gold); letter-spacing:0.1em; text-transform:uppercase; }
-.song-preview audio { width:100%; }
-.song-preview-note { font-size:11px; color:rgba(255,255,255,0.35); margin-top:8px; text-align:center; }
+/* EMOTION SECTION */
+.emotion{background:var(--cream);padding:72px 24px;}
+.emotion-inner{max-width:760px;margin:0 auto;}
+.emotion h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);font-weight:900;color:var(--navy);margin-bottom:32px;}
+.emotion-q{font-size:17px;color:var(--text);line-height:2.1;margin-bottom:8px;padding-left:20px;border-left:2px solid rgba(200,164,90,0.3);}
+.emotion-close{font-family:'Playfair Display',serif;font-size:20px;color:var(--navy);font-style:italic;margin:32px 0;line-height:1.6;}
+.emotion-close em{color:var(--gold);font-style:normal;}
 
 /* DAVE SECTION */
-.dave-section { display:grid; grid-template-columns:auto 1fr; gap:40px; align-items:start; }
-.dave-photo { width:160px; height:200px; object-fit:cover; object-position:center 10%; border:3px solid var(--gold); flex-shrink:0; }
-.dave-text p { font-size:16px; color:var(--text); line-height:1.85; margin-bottom:16px; }
-.dave-text p strong { color:var(--navy); }
-.dave-sig { font-family:'Playfair Display',serif; font-size:18px; font-style:italic; color:var(--navy); margin-top:8px; }
+.dave{background:var(--navy);padding:72px 24px;}
+.dave-inner{max-width:860px;margin:0 auto;}
+.dave-grid{display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start;}
+.dave-photo{width:200px;height:260px;object-fit:cover;object-position:center 10%;border:3px solid var(--gold);}
+.dave-label{font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;}
+.dave-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);font-weight:700;color:var(--white);margin-bottom:24px;line-height:1.2;}
+.dave-text p{font-size:16px;color:rgba(255,255,255,0.8);line-height:1.85;margin-bottom:14px;}
+.dave-text strong{color:var(--gold);}
+.dave-sig{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:rgba(255,255,255,0.6);margin-top:16px;}
 
-/* PRICING */
-.pricing-box { background:var(--navy); padding:48px 40px; text-align:center; border:2px solid rgba(200,164,90,0.3); max-width:560px; margin:0 auto; }
-.pricing-box h3 { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; color:var(--white); margin-bottom:8px; }
-.pricing-was { font-size:14px; color:rgba(255,255,255,0.4); text-decoration:line-through; margin-bottom:8px; }
-.pricing-price { font-family:'Playfair Display',serif; font-size:72px; font-weight:900; color:var(--gold); line-height:1; margin-bottom:4px; }
-.pricing-note { font-size:13px; color:rgba(255,255,255,0.5); margin-bottom:32px; }
-.pricing-includes { list-style:none; text-align:left; margin:0 0 32px; padding:0; border-top:1px solid rgba(200,164,90,0.15); padding-top:24px; }
-.pricing-includes li { font-size:14px; color:rgba(255,255,255,0.8); padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.06); padding-left:20px; position:relative; }
-.pricing-includes li::before { content:'✓'; position:absolute; left:0; color:var(--gold); font-weight:700; }
-.pricing-btn { display:block; background:var(--gold); color:var(--navy); font-size:14px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:20px; text-decoration:none; transition:all 0.2s; margin-bottom:16px; }
-.pricing-btn:hover { background:var(--gold-light); }
-.pricing-guarantee { font-size:12px; color:rgba(255,255,255,0.4); line-height:1.6; }
+/* PAIN / FEAST FAMINE */
+.pain{background:var(--cream);padding:72px 24px;}
+.pain-inner{max-width:760px;margin:0 auto;}
+.pain h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);font-weight:900;color:var(--navy);margin-bottom:32px;}
+.pain-month{margin-bottom:28px;}
+.pain-month h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--navy);font-style:italic;margin-bottom:10px;}
+.pain-line{font-size:16px;color:var(--text);line-height:1.9;padding-left:16px;border-left:2px solid rgba(200,164,90,0.3);margin-bottom:4px;}
+.pain-insert{background:var(--navy);padding:32px;margin:36px 0;border-left:4px solid var(--gold);}
+.pain-insert p{font-size:16px;color:rgba(255,255,255,0.85);line-height:1.85;margin-bottom:12px;}
+.pain-insert p:last-child{margin-bottom:0;}
+.pain-insert strong{color:var(--gold);}
+.pain-insert em{font-style:italic;color:rgba(255,255,255,0.7);}
 
-/* FINAL CTA */
-.final-cta { background:var(--navy); padding:80px 24px; text-align:center; border-top:1px solid rgba(200,164,90,0.2); }
-.final-cta h2 { font-family:'Playfair Display',serif; font-size:clamp(28px,4vw,48px); font-weight:900; color:var(--white); line-height:1.2; margin-bottom:20px; }
-.final-cta h2 em { color:var(--gold); font-style:italic; }
-.final-cta p { font-size:17px; color:rgba(255,255,255,0.65); max-width:560px; margin:0 auto 36px; line-height:1.7; }
-.final-btn { display:inline-block; background:var(--gold); color:var(--navy); font-size:14px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:20px 48px; text-decoration:none; }
+/* ATHLETES */
+.athletes{background:var(--white);padding:72px 24px;}
+.athletes-inner{max-width:860px;margin:0 auto;}
+.athlete-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:32px 0;}
+.athlete-item{background:var(--cream);border:1px solid var(--border);border-top:3px solid var(--gold);padding:20px 16px;text-align:center;}
+.athlete-item .ai{font-size:28px;margin-bottom:8px;display:block;}
+.athlete-item strong{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.athlete-item span{font-size:11px;color:var(--text-light);}
 
-/* FOOTER */
-.footer { background:#080f17; padding:32px 40px; text-align:center; }
-.footer p { font-size:12px; color:rgba(255,255,255,0.3); line-height:1.7; }
-.footer a { color:rgba(200,164,90,0.6); text-decoration:none; }
+/* THREE PILLARS */
+.pillars{background:var(--navy);padding:72px 24px;}
+.pillars-inner{max-width:860px;margin:0 auto;text-align:center;}
+.pillars h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);font-weight:700;color:var(--white);margin-bottom:12px;}
+.pillars-sub{font-size:16px;color:rgba(255,255,255,0.6);margin-bottom:48px;}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.pillar{padding:36px 24px;border:1px solid rgba(200,164,90,0.2);position:relative;}
+.pillar-num{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;color:rgba(200,164,90,0.15);position:absolute;top:16px;right:20px;line-height:1;}
+.pillar h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--gold);margin-bottom:12px;}
+.pillar p{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.7;}
+
+/* SESSIONS */
+.sessions{background:var(--white);padding:72px 24px;}
+.sessions-inner{max-width:860px;margin:0 auto;}
+.sessions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:32px 0;}
+.session-card{background:var(--cream);border:1px solid var(--border);border-top:3px solid var(--gold);padding:24px;}
+.session-card .sn{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block;}
+.session-card h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.session-card p{font-size:13px;color:var(--text-light);line-height:1.6;margin-bottom:10px;}
+.session-card .st{font-size:11px;color:var(--text-light);letter-spacing:0.08em;text-transform:uppercase;}
+.method-note{background:var(--navy);padding:20px 24px;margin-top:24px;border-left:4px solid var(--gold);}
+.method-note p{font-size:14px;color:rgba(255,255,255,0.8);line-height:1.7;}
+
+/* BONUSES */
+.bonuses{background:var(--navy);padding:72px 24px;}
+.bonuses-inner{max-width:860px;margin:0 auto;}
+.bonus-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:32px 0;}
+.bonus-card{background:rgba(255,255,255,0.04);border:1px solid rgba(200,164,90,0.15);padding:24px;}
+.bonus-card .bi{font-size:28px;margin-bottom:12px;display:block;}
+.bonus-card h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.bonus-card p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;margin-bottom:10px;}
+.bonus-card .bt{font-size:11px;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase;}
+
+/* SONG */
+.song{background:var(--navy);padding:0 24px 72px;}
+.song-inner{max-width:760px;margin:0 auto;}
+.song-banner{background:rgba(200,164,90,0.08);border:1px solid rgba(200,164,90,0.25);padding:8px 16px;display:inline-block;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+.song h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);font-weight:700;color:var(--white);margin-bottom:8px;}
+.song-desc{font-size:16px;color:rgba(255,255,255,0.65);margin-bottom:32px;line-height:1.7;}
+.song-player{background:rgba(200,164,90,0.06);border:1px solid rgba(200,164,90,0.2);padding:24px 28px;margin-bottom:12px;}
+.song-player-header{display:flex;align-items:center;gap:16px;margin-bottom:14px;flex-wrap:wrap;}
+.song-player-header img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid rgba(200,164,90,0.5);}
+.song-player-header strong{display:block;font-size:14px;color:var(--white);margin-bottom:2px;}
+.song-player-header span{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;}
+.song-player audio{width:100%;}
+.song-preview-note{font-size:11px;color:rgba(255,255,255,0.3);margin-top:6px;text-align:center;}
 
 /* PULLQUOTE */
-.pullquote { font-family:'Playfair Display',serif; font-size:clamp(20px,3vw,28px); font-style:italic; color:var(--navy); text-align:center; padding:40px 32px; border-top:3px solid var(--gold); border-bottom:3px solid var(--gold); margin:48px 0; line-height:1.5; }
+.pullquote-section{background:var(--gold-pale);padding:60px 24px;}
+.pullquote{font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,30px);font-style:italic;color:var(--navy);text-align:center;max-width:760px;margin:0 auto;line-height:1.5;}
 
-@media(max-width:768px) {
-  .header { padding:16px 20px; }
-  .proof-bar { gap:32px; padding:24px 20px; }
-  .dave-section { grid-template-columns:1fr; }
-  .dave-photo { width:120px; height:150px; }
-  .pricing-box { padding:32px 24px; }
-  .pricing-price { font-size:56px; }
+/* PRICING */
+.pricing{background:var(--cream);padding:72px 24px;}
+.pricing-inner{max-width:560px;margin:0 auto;text-align:center;}
+.pricing-box{background:var(--navy);padding:48px 40px;border:2px solid rgba(200,164,90,0.3);}
+.pricing-box h3{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.pricing-was{font-size:14px;color:rgba(255,255,255,0.4);text-decoration:line-through;margin-bottom:8px;}
+.pricing-price{font-family:'Playfair Display',serif;font-size:80px;font-weight:900;color:var(--gold);line-height:1;margin-bottom:4px;}
+.pricing-note{font-size:13px;color:rgba(255,255,255,0.45);margin-bottom:32px;}
+.pricing-includes{list-style:none;text-align:left;margin:0 0 32px;padding:0;border-top:1px solid rgba(200,164,90,0.15);padding-top:24px;}
+.pricing-includes li{font-size:14px;color:rgba(255,255,255,0.8);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06);padding-left:20px;position:relative;}
+.pricing-includes li::before{content:'✓';position:absolute;left:0;color:var(--gold);font-weight:700;}
+.pricing-btn{display:block;background:var(--gold);color:var(--navy);font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:20px;text-decoration:none;transition:all 0.2s;margin-bottom:16px;}
+.pricing-btn:hover{background:var(--gold-light);}
+.pricing-guarantee{font-size:12px;color:rgba(255,255,255,0.4);line-height:1.7;}
+
+/* FINAL CTA */
+.final-cta{background:var(--navy);padding:80px 24px;text-align:center;border-top:1px solid rgba(200,164,90,0.2);}
+.final-cta h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:900;color:var(--white);line-height:1.2;margin-bottom:16px;}
+.final-cta h2 em{color:var(--gold);font-style:italic;}
+.final-cta p{font-size:17px;color:rgba(255,255,255,0.65);max-width:560px;margin:0 auto 36px;line-height:1.7;}
+.final-btn{display:inline-block;background:var(--gold);color:var(--navy);font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:20px 48px;text-decoration:none;}
+
+/* FOOTER */
+.footer{background:#080f17;padding:32px 40px;text-align:center;}
+.footer p{font-size:12px;color:rgba(255,255,255,0.3);line-height:1.7;}
+.footer a{color:rgba(200,164,90,0.6);text-decoration:none;}
+
+/* LABEL */
+.section-label{font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;}
+
+@media(max-width:768px){
+  .header{padding:16px 20px;}
+  .proof-bar{gap:28px;padding:20px;}
+  .nobody-grid{grid-template-columns:1fr;}
+  .nobody-col:first-child{border-right:none;border-bottom:1px solid var(--border);}
+  .dave-grid{grid-template-columns:1fr;}
+  .dave-photo{width:140px;height:180px;}
+  .pillar-grid{grid-template-columns:1fr;}
+  .pricing-box{padding:32px 20px;}
+  .pricing-price{font-size:60px;}
 }
 </style>
 </head>
@@ -180,9 +220,9 @@ body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--text
   <div class="hero-eyebrow">For Real Estate Professionals</div>
   <h1>Nobody Teaches Realtors How to Train Their Mind</h1>
   <h2>Close More.<br><em>Stress Less.</em></h2>
-  <p class="hero-sub">The daily mental training system designed to help you stay calm under pressure, recover from rejection, build unshakeable confidence, and break the feast-or-famine cycle — for good.</p>
+  <p class="hero-million">Your clients experience your state of mind<br>before they experience your presentation.</p>
   <a href="https://buy.stripe.com/bJe28q7ef4mu9yT0lAdby00" class="hero-btn">Yes — I Want to Close More & Stress Less</a>
-  <p class="hero-guarantee">30-Day Money-Back Guarantee · Instant Access · One Payment</p>
+  <p class="hero-guarantee">30-Day Money-Back Guarantee · Instant Access · One Payment · $47</p>
 </section>
 
 <!-- PROOF BAR -->
@@ -194,303 +234,313 @@ body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--text
   <div class="proof-item"><strong>$47</strong><span>One Time</span></div>
 </div>
 
-<!-- PAIN SECTION -->
-<section class="section section-dark">
-  <div class="section-inner">
-    <span class="section-label">Sound Familiar?</span>
-    <h2 class="section-title">The Roller Coaster Nobody Warned You About</h2>
+<!-- NOBODY TEACHES -->
+<section class="nobody">
+  <div class="nobody-inner">
+    <span class="section-label">The Gap Nobody Talks About</span>
+    <h2>We learn everything about real estate.<br>Except the most important part.</h2>
 
-    <div class="pain-lines">
-      <div class="pain-month">
-        <h3>One month...</h3>
-        <div class="pain-line">"I can't keep this pace."</div>
-        <div class="pain-line">Phone won't stop ringing.</div>
-        <div class="pain-line">Listing appointments. Inspections. Negotiations.</div>
-        <div class="pain-line">Clients texting at 10pm.</div>
-        <div class="pain-line">You barely have time to breathe.</div>
+    <div class="nobody-grid">
+      <div class="nobody-col has">
+        <h3>What Real Estate Training Covers</h3>
+        <ul>
+          <li>Scripts and objection handling</li>
+          <li>Negotiation tactics</li>
+          <li>Contracts and compliance</li>
+          <li>Marketing and lead generation</li>
+          <li>CRMs and technology</li>
+          <li>Social media strategy</li>
+          <li>Open house techniques</li>
+        </ul>
       </div>
-
-      <div class="pain-month">
-        <h3>Then six weeks later...</h3>
-        <div class="pain-line">"Where did everybody go?"</div>
-        <div class="pain-line">"I really need another deal."</div>
-        <div class="pain-line">And now you're carrying that pressure into every appointment.</div>
+      <div class="nobody-col missing">
+        <h3>What Nobody Ever Teaches</h3>
+        <ul>
+          <li>How to recover after losing a deal</li>
+          <li>How to leave yesterday's rejection behind</li>
+          <li>How to perform when income is uncertain</li>
+          <li>How to stay calm under pressure</li>
+          <li>How to break the feast/famine cycle</li>
+          <li>How to sleep instead of replaying deals</li>
+          <li>How to train your mind like a top performer</li>
+        </ul>
       </div>
     </div>
 
-    <div class="pain-bridge">
-      Here's what nobody tells you.<br><br>
-      When you're slammed — more than you can handle — you start broadcasting a signal without realizing it.<br><br>
-      <em>"I have too much. I can't take on more."</em><br><br>
-      Your sphere feels it. Your referral sources feel it. They stop sending.<br><br>
-      So while you're closing the deals you have — you're quietly pushing away the next ones.<br><br>
-      <em>The feast creates the famine.</em><br>
-      Not the market. Not your competition.<br>
-      Your own signal.
+    <div class="nobody-bridge">
+      <p>Nobody teaches us how to perform consistently regardless of what's happening in our pipeline, our market, or our personal lives. We're expected to figure out the mental side of this business on our own.</p>
+      <p><strong>Until now.</strong></p>
     </div>
-
-    <p style="font-size:17px;color:rgba(255,255,255,0.7);line-height:1.85;text-align:center;max-width:640px;margin:0 auto;">One deal falls apart and you're carrying that stress into today's listing appointment. Nobody teaches us how to recover.<br><br><strong style="color:var(--gold);">Until now.</strong></p>
   </div>
 </section>
 
-<!-- ATHLETES SECTION -->
-<section class="section section-cream">
-  <div class="section-inner">
+<!-- EMOTION SECTION -->
+<section class="emotion">
+  <div class="emotion-inner">
+    <span class="section-label">You're Not Alone</span>
+    <h2>Have You Ever...</h2>
+
+    <div class="emotion-q">Driven home replaying a listing appointment you didn't win?</div>
+    <div class="emotion-q">Lost sleep over a deal that fell apart at the last minute?</div>
+    <div class="emotion-q">Wondered how you're going to cover next month's bills?</div>
+    <div class="emotion-q">Questioned whether you still have what it takes?</div>
+    <div class="emotion-q">Smiled in front of clients while quietly carrying the weight of everything happening behind the scenes?</div>
+    <div class="emotion-q">Felt the energy drain from a difficult client before a listing appointment?</div>
+    <div class="emotion-q">Watched a deal go to another agent and not been able to shake it for days?</div>
+
+    <div class="emotion-close">
+      If so — you're not broken.<br><br>
+      You're trying to perform in one of the most emotionally demanding professions there is...<br><br>
+      <em>without ever being taught how to train your mind.</em>
+    </div>
+  </div>
+</section>
+
+<!-- DAVE SECTION — moved up high -->
+<section class="dave">
+  <div class="dave-inner">
+    <div class="dave-grid">
+      <img src="dave-cole-realtor.png" alt="Dave Cole — REI & REO Realty LLC" class="dave-photo">
+      <div class="dave-text">
+        <span class="dave-label">Built By a Realtor, For Realtors</span>
+        <h2 class="dave-title">I Wish Someone Had Given Me This 25 Years Ago</h2>
+        <p>My name is Dave Cole. I've been a licensed real estate broker for over 25 years at REI & REO Realty LLC in Phoenix, Arizona. Over that career I've helped hundreds of buyers and sellers through some of the most significant financial decisions of their lives, completed thousands of BPOs, and experienced nearly every high and low this business can throw at you — multiple market crashes, record years, feast periods, famine periods, and everything in between.</p>
+        <p>For most of that career I treated the mental side of this business like an afterthought. Scripts, systems, market knowledge — that's what got trained. The mind was on its own.</p>
+        <p>Eventually I realized the most important variable in my production wasn't any of those things. It was the mental and emotional state I walked into appointments with. Whether I was fully present — or quietly carrying the weight of the week.</p>
+        <p><strong>When business slowed down, I wasn't just feeling the pressure. I was carrying it into every conversation. I was showing up worried about the commission. I never said those words out loud — but I could feel the difference in myself. And so could my clients.</strong></p>
+        <p>When I got intentional about resetting that state — everything changed. I became more consistent. I enjoyed the work more. My clients trusted me faster.</p>
+        <p>I organized everything that helped me into one program. Close More. Stress Less. is the mental performance system I wish someone had handed me in year one.</p>
+        <div class="dave-sig">— Dave Cole, REI & REO Realty LLC · Phoenix, AZ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN / FEAST FAMINE -->
+<section class="pain">
+  <div class="pain-inner">
+    <span class="section-label">The Roller Coaster Nobody Warned You About</span>
+    <h2>Sound Familiar?</h2>
+
+    <div class="pain-month">
+      <h3>One month...</h3>
+      <div class="pain-line">"I can't keep this pace."</div>
+      <div class="pain-line">Phone won't stop ringing. Listing appointments. Inspections. Negotiations.</div>
+      <div class="pain-line">Clients texting at 10pm. You barely have time to breathe.</div>
+    </div>
+
+    <div class="pain-insert">
+      <p>During those busy months, I stopped calling past clients. I returned calls slower. I wasn't fully present. I unintentionally gave people the impression I was full — that I didn't have room for more.</p>
+      <p>So while I was closing the deals I had... I was quietly pushing away the next ones.</p>
+      <p><strong>The busiest seasons often plant the seeds of the next slow season.</strong> Not because of the market. Not because of your competition. Because of the way you showed up — or didn't — during the feast.</p>
+    </div>
+
+    <div class="pain-month">
+      <h3>Then six or eight weeks later...</h3>
+      <div class="pain-line">"Where did everybody go?"</div>
+      <div class="pain-line">"I really need another deal."</div>
+      <div class="pain-line">And now you're carrying that pressure into every appointment.</div>
+      <div class="pain-line">Every call. Every consultation. Every negotiation.</div>
+    </div>
+
+    <p style="font-size:17px;color:var(--text);line-height:1.85;margin-top:32px;padding:24px 28px;background:var(--white);border-left:4px solid var(--gold);">One deal falls apart and you're carrying that energy into today's listing appointment. Nobody teaches us how to recover from that. <strong>Until now.</strong></p>
+  </div>
+</section>
+
+<!-- ATHLETES -->
+<section class="athletes">
+  <div class="athletes-inner">
     <span class="section-label">The Mental Performance Gap</span>
-    <h2 class="section-title">Every Top Performer Trains Their Mind</h2>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);font-weight:900;color:var(--navy);margin-bottom:32px;">Every Top Performer Trains Their Mind</h2>
 
     <div class="athlete-grid">
-      <div class="athlete-item">
-        <span class="athlete-icon">🏆</span>
-        <strong>Elite Athletes</strong>
-        <span>Mental performance coaches on every team</span>
-      </div>
-      <div class="athlete-item">
-        <span class="athlete-icon">⛳</span>
-        <strong>Professional Golfers</strong>
-        <span>As much time on mindset as swing</span>
-      </div>
-      <div class="athlete-item">
-        <span class="athlete-icon">🎖️</span>
-        <strong>Navy SEALs</strong>
-        <span>Trained to stay calm under extreme pressure</span>
-      </div>
-      <div class="athlete-item">
-        <span class="athlete-icon">💼</span>
-        <strong>Fortune 500 CEOs</strong>
-        <span>Executive coaches for mental performance</span>
-      </div>
-      <div class="athlete-item">
-        <span class="athlete-icon">🏅</span>
-        <strong>Olympians</strong>
-        <span>Visualization and mental rehearsal daily</span>
-      </div>
+      <div class="athlete-item"><span class="ai">🏆</span><strong>Elite Athletes</strong><span>Mental performance coaches on every team</span></div>
+      <div class="athlete-item"><span class="ai">⛳</span><strong>Pro Golfers</strong><span>As much time on mindset as swing</span></div>
+      <div class="athlete-item"><span class="ai">🎖️</span><strong>Navy SEALs</strong><span>Trained to stay calm under pressure</span></div>
+      <div class="athlete-item"><span class="ai">🏅</span><strong>Olympians</strong><span>Daily visualization and mental rehearsal</span></div>
+      <div class="athlete-item"><span class="ai">💼</span><strong>Fortune 500 CEOs</strong><span>Executive coaches for peak performance</span></div>
     </div>
 
-    <div class="athlete-bridge">
-      Yet Realtors are expected to manage rejection, inconsistent income, emotional clients, difficult negotiations, contracts falling apart, and the constant uncertainty of commission sales — and <strong>somehow figure out the mental side of the business on their own.</strong><br><br>
-      That never made sense to me. So I built something about it.
-    </div>
+    <p style="font-size:17px;color:var(--text);line-height:1.85;padding:28px 32px;background:var(--cream);border-left:4px solid var(--gold);margin-top:8px;">Yet Realtors are expected to manage rejection, inconsistent income, emotional clients, difficult negotiations, contracts falling apart, and the constant uncertainty of commission sales — and somehow figure out the mental side of the business on their own. <strong>That never made sense to me.</strong></p>
   </div>
 </section>
 
-<!-- IMAGINE SECTION -->
-<section class="section section-dark">
-  <div class="section-inner">
-    <span class="section-label">What's Possible</span>
-    <h2 class="section-title">Imagine Showing Up Like This Every Day</h2>
+<!-- THREE PILLARS -->
+<section class="pillars">
+  <div class="pillars-inner">
+    <span class="section-label" style="color:var(--gold);">How It Works</span>
+    <h2>Three Simple Pillars</h2>
+    <p class="pillars-sub">Everything in Close More. Stress Less. is built around this framework.</p>
 
-    <div class="imagine-grid">
-      <div class="imagine-item">
-        <strong>Calm</strong>
-        <span>Walk into every appointment without carrying the weight of last week</span>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <div class="pillar-num">1</div>
+        <h3>Reset</h3>
+        <p>Leave yesterday behind. Release the rejection, the stress, the weight of deals that didn't close. Show up clean to every conversation.</p>
       </div>
-      <div class="imagine-item">
-        <strong>Focused</strong>
-        <span>Fully present with every client — not running numbers in your head</span>
+      <div class="pillar">
+        <div class="pillar-num">2</div>
+        <h3>Rewire</h3>
+        <p>Build the mindset of a consistent performer. Replace the limiting beliefs that cap your production with the identity of someone who knows their value.</p>
       </div>
-      <div class="imagine-item">
-        <strong>Confident</strong>
-        <span>The quiet certainty that comes from someone who knows their value</span>
-      </div>
-      <div class="imagine-item">
-        <strong>Recovered</strong>
-        <span>Let go of the deal that fell apart before the next conversation</span>
-      </div>
-      <div class="imagine-item">
-        <strong>Consistent</strong>
-        <span>Breaking the feast/famine cycle at its energetic root</span>
-      </div>
-      <div class="imagine-item">
-        <strong>Sleeping</strong>
-        <span>Stop replaying negotiations at 2am and actually rest</span>
-      </div>
-      <div class="imagine-item">
-        <strong>Serving</strong>
-        <span>Showing up to help — not to chase a commission</span>
-      </div>
-      <div class="imagine-item">
-        <strong>Enjoying It</strong>
-        <span>Remembering why you chose this career in the first place</span>
+      <div class="pillar">
+        <div class="pillar-num">3</div>
+        <h3>Perform</h3>
+        <p>Show up differently. Calm. Present. Confident. Fully there for your clients — not running commission numbers in your head during the appointment.</p>
       </div>
     </div>
 
-    <p style="font-size:16px;color:rgba(255,255,255,0.6);text-align:center;margin-top:24px;font-style:italic;">That's what clients remember. That's what builds careers.</p>
+    <p style="font-size:14px;color:rgba(255,255,255,0.45);text-align:center;margin-top:32px;">These sessions combine guided mental rehearsal, visualization, breathing techniques, and carefully designed soundscapes to help you reset, focus, and perform at your best.</p>
   </div>
 </section>
 
 <!-- SESSIONS -->
-<section class="section section-white">
-  <div class="section-inner">
+<section class="sessions">
+  <div class="sessions-inner">
     <span class="section-label">The Program</span>
-    <h2 class="section-title">Inside Close More. Stress Less.</h2>
-    <p style="font-size:17px;color:var(--text-light);margin-bottom:8px;">7 guided audio sessions. Each one targeting a specific challenge real estate agents face every day.</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);font-weight:900;color:var(--navy);margin-bottom:8px;">7 Guided Sessions. Each One Targeting a Specific Challenge.</h2>
+    <p style="font-size:16px;color:var(--text-light);margin-bottom:8px;">Audio-guided mental performance training designed for the real estate professional's daily life.</p>
 
     <div class="sessions-grid">
       <div class="session-card">
-        <span class="session-num">Session 1</span>
-        <h3>Morning Reset</h3>
-        <p>Start every day with confidence and intention. Clear last week before today's first conversation.</p>
-        <span class="session-time">7:01 · Before prospecting</span>
+        <span class="sn">Session 1</span>
+        <h3>Morning Performance Reset™</h3>
+        <p>Start every day with intention and confidence. Clear last week before today's first conversation.</p>
+        <span class="st">7:01 · Before prospecting</span>
       </div>
       <div class="session-card">
-        <span class="session-num">Session 2</span>
-        <h3>Mind for Production</h3>
-        <p>Rewrite the internal beliefs that limit your performance. Install the mindset of a top producer.</p>
-        <span class="session-time">5:58 · Anytime</span>
+        <span class="sn">Session 2</span>
+        <h3>Mind for Production™</h3>
+        <p>Rewrite the internal beliefs that limit your performance. Build the mindset of a consistent top producer.</p>
+        <span class="st">5:58 · Anytime</span>
       </div>
       <div class="session-card">
-        <span class="session-num">Session 3</span>
-        <h3>Deal Recovery</h3>
-        <p>Let go of the transaction that fell apart. Release the rejection before it becomes your energy.</p>
-        <span class="session-time">7:00 · After a hard day</span>
+        <span class="sn">Session 3</span>
+        <h3>Deal Recovery Protocol™</h3>
+        <p>Let go of the transaction that fell apart before it becomes your energy in the next appointment.</p>
+        <span class="st">7:00 · After a hard day</span>
       </div>
       <div class="session-card">
-        <span class="session-num">Session 4</span>
-        <h3>Abundance Activation</h3>
-        <p>Shift from scarcity to service energy. Show up to appointments wanting to help — not needing the deal.</p>
-        <span class="session-time">5:10 · Before appointments</span>
+        <span class="sn">Session 4</span>
+        <h3>Listing Confidence Reset™</h3>
+        <p>Show up to appointments to serve — not to need. Shift from commission anxiety to genuine presence.</p>
+        <span class="st">5:10 · Before appointments</span>
       </div>
       <div class="session-card">
-        <span class="session-num">Session 5</span>
-        <h3>Peak Performance Visualization</h3>
-        <p>See yourself winning the listing before you walk in. Mental rehearsal used by every elite performer.</p>
-        <span class="session-time">6:08 · Pre-appointment</span>
+        <span class="sn">Session 5</span>
+        <h3>Peak Performance Visualization™</h3>
+        <p>See yourself winning before you walk in. Mental rehearsal used by every elite performer on the planet.</p>
+        <span class="st">6:08 · Pre-appointment</span>
       </div>
       <div class="session-card">
-        <span class="session-num">Session 6</span>
-        <h3>Sleep Reset</h3>
-        <p>Stop replaying negotiations at night. Decompress fully and wake up recovered and ready.</p>
-        <span class="session-time">11:58 · Every night</span>
+        <span class="sn">Session 6</span>
+        <h3>Sleep Reset™</h3>
+        <p>Stop replaying negotiations at 2am. Decompress fully and wake up recovered, clear, and ready.</p>
+        <span class="st">11:58 · Every night</span>
       </div>
       <div class="session-card">
-        <span class="session-num">Session 7</span>
-        <h3>Consistency Training</h3>
-        <p>Break the feast/famine cycle. Broadcast the signal of genuine gratitude and confident desire for more.</p>
-        <span class="session-time">8:34 · As needed</span>
+        <span class="sn">Session 7</span>
+        <h3>Consistency Conditioning™</h3>
+        <p>Train the mental habits that break the feast/famine cycle and build a more predictable business.</p>
+        <span class="st">8:34 · As needed</span>
       </div>
+    </div>
+
+    <div class="method-note">
+      <p>These sessions use guided mental rehearsal, visualization, breathing techniques, and carefully designed soundscapes to help you reset, focus, and perform at your best. No prior experience needed. Just headphones and 5-12 minutes.</p>
     </div>
   </div>
 </section>
 
 <!-- BONUSES -->
-<section class="section section-dark">
-  <div class="section-inner">
-    <span class="section-label">6 Bonus Sessions Included</span>
-    <h2 class="section-title">Pull These Up On Your Phone When You Need Them</h2>
+<section class="bonuses">
+  <div class="bonuses-inner">
+    <span class="section-label" style="color:var(--gold);">6 Bonus Sessions Included</span>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);font-weight:700;color:var(--white);margin-bottom:8px;">Pull These Up On Your Phone When You Need Them</h2>
+    <p style="font-size:16px;color:rgba(255,255,255,0.6);margin-bottom:8px;">Quick-access sessions for specific moments throughout your day.</p>
 
     <div class="bonus-grid">
       <div class="bonus-card">
-        <span class="bonus-icon">☀️</span>
-        <h3>Pre-Prospecting Primer</h3>
-        <p>Listen before you pick up the phone. Sets your energy before the first call of the day.</p>
-        <span class="bonus-time">2:46 · Before prospecting</span>
+        <span class="bi">☀️</span>
+        <h3>Pre-Prospecting Primer™</h3>
+        <p>Listen before you pick up the phone. Sets your mental state before the first call of the day.</p>
+        <span class="bt">2:46 · Before prospecting</span>
       </div>
       <div class="bonus-card">
-        <span class="bonus-icon">⚡</span>
-        <h3>90-Second Confidence Reset</h3>
+        <span class="bi">⚡</span>
+        <h3>90-Second Confidence Reset™</h3>
         <p>Listen in your car before walking into any appointment. Changes how you walk into the room.</p>
-        <span class="bonus-time">1:35 · Pre-appointment</span>
+        <span class="bt">1:35 · Pre-appointment</span>
       </div>
       <div class="bonus-card">
-        <span class="bonus-icon">🌙</span>
-        <h3>Quick Night Reset</h3>
-        <p>When you don't have time for the full sleep session. Decompress and let the day go in 6 minutes.</p>
-        <span class="bonus-time">6:05 · Before bed</span>
+        <span class="bi">🌙</span>
+        <h3>Quick Night Reset™</h3>
+        <p>When you need to decompress fast. Let the day go before it follows you into sleep.</p>
+        <span class="bt">6:05 · Before bed</span>
       </div>
       <div class="bonus-card">
-        <span class="bonus-icon">📓</span>
-        <h3>Realtor Gratitude Journal</h3>
-        <p>PDF with daily prompts specific to real estate. Weekly review pages and gratitude practice.</p>
-        <span class="bonus-time">PDF · Print & use daily</span>
+        <span class="bi">📓</span>
+        <h3>Realtor Performance Journal™</h3>
+        <p>PDF with daily prompts specific to real estate performance. Weekly review and gratitude practice.</p>
+        <span class="bt">PDF · Print &amp; use daily</span>
       </div>
       <div class="bonus-card">
-        <span class="bonus-icon">🔄</span>
-        <h3>Feast/Famine Reset</h3>
-        <p>Clear the overwhelm and desperation energy. Install genuine gratitude and desire for more business.</p>
-        <span class="bonus-time">8:34 · As needed</span>
+        <span class="bi">🔄</span>
+        <h3>Cycle Breaker Session™</h3>
+        <p>Specifically designed to interrupt the mental patterns that create the feast/famine cycle.</p>
+        <span class="bt">8:34 · As needed</span>
       </div>
       <div class="bonus-card">
-        <span class="bonus-icon">🪞</span>
-        <h3>The Quantum Mirror Method</h3>
-        <p>Meet the version of you who already closes more and stresses less. A two-phase mirror and visualization practice.</p>
-        <span class="bonus-time">15:15 · Evening</span>
+        <span class="bi">🪞</span>
+        <h3>The Quantum Mirror Method™</h3>
+        <p>A unique two-phase practice. Meet the version of you who already performs at your highest level — then fully become them.</p>
+        <span class="bt">15:15 · Evening</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SONG PREVIEW -->
-<section class="section section-dark" style="padding-top:0;">
-  <div class="section-inner">
-    <span class="section-label">Also Included</span>
-    <h2 class="section-title">Close More Stress Less — Your Realtor Anthem</h2>
-    <p style="font-size:16px;color:rgba(255,255,255,0.65);margin-bottom:28px;line-height:1.7;">An original song written for real estate professionals. About energy, authenticity, and what it means to truly serve your clients. Listen on the way to your next appointment. Two voice versions included.</p>
+<!-- SONG -->
+<section class="song">
+  <div class="song-inner">
+    <div class="song-banner">🎵 Bonus — Your Realtor Anthem</div>
+    <h2>Close More Stress Less — The Song</h2>
+    <p class="song-desc">An original song written specifically for real estate professionals — about showing up with energy, authenticity, and the quiet confidence that closes deals. Listen on the way to your next appointment. Two voice versions included with the program.</p>
 
-    <div class="song-preview">
-      <div class="song-header">
+    <div class="song-player">
+      <div class="song-player-header">
         <img src="https://aethura.app/Aura_TH_Green.png" alt="Aura">
-        <div>
-          <strong>Close More Stress Less — Your Realtor Anthem (Female)</strong>
-          <span>60-Second Preview</span>
-        </div>
+        <div><strong>Close More Stress Less — Female Version</strong><span>60-Second Preview</span></div>
       </div>
       <audio id="preview-aura" controls preload="none" ontimeupdate="if(this.currentTime>60){this.pause();this.currentTime=60;}">
         <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_the_signal_aura.mp3" type="audio/mpeg">
       </audio>
-      <p class="song-preview-note">60-second preview — full song included with purchase</p>
+      <p class="song-preview-note">60-second preview · Full song included with purchase</p>
     </div>
 
-    <div class="song-preview">
-      <div class="song-header">
+    <div class="song-player">
+      <div class="song-player-header">
         <img src="https://aethura.app/Aether_White.png" alt="Aether">
-        <div>
-          <strong>Close More Stress Less — Your Realtor Anthem (Male)</strong>
-          <span>60-Second Preview</span>
-        </div>
+        <div><strong>Close More Stress Less — Male Version</strong><span>60-Second Preview</span></div>
       </div>
       <audio id="preview-aether" controls preload="none" ontimeupdate="if(this.currentTime>60){this.pause();this.currentTime=60;}">
         <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_the_signal_aether.mp3" type="audio/mpeg">
       </audio>
-      <p class="song-preview-note">60-second preview — full song included with purchase</p>
-    </div>
-  </div>
-</section>
-
-<!-- DAVE SECTION -->
-<section class="section section-cream">
-  <div class="section-inner">
-    <span class="section-label">Built By a Realtor, For Realtors</span>
-    <h2 class="section-title">I Wish Someone Had Given Me This 25 Years Ago</h2>
-
-    <div class="dave-section">
-      <img src="dave-cole-realtor.png" alt="Dave Cole" class="dave-photo">
-      <div class="dave-text">
-        <p>My name is Dave Cole. I've been a licensed real estate broker for over 25 years at REI & REO Realty LLC in Phoenix, Arizona.</p>
-        <p>For most of that career I treated the mental side of this business like an afterthought. Scripts, systems, market knowledge — that's what got trained. The mind was on its own.</p>
-        <p>Eventually I realized the most important variable in my production wasn't any of those things. It was the energy I walked into appointments with. The signal I was broadcasting. And whether I was showing up to serve — or showing up worried about the commission.</p>
-        <p><strong>When I got intentional about resetting that energy — everything changed.</strong> I became more consistent. I enjoyed the work more. My clients trusted me faster. And the feast/famine cycle that had defined my career for 20 years started to smooth out.</p>
-        <p>I organized everything that helped me into one program. Close More. Stress Less. is the mental performance system I wish someone had handed me in year one.</p>
-        <div class="dave-sig">— Dave Cole, REI & REO Realty LLC</div>
-      </div>
+      <p class="song-preview-note">60-second preview · Full song included with purchase</p>
     </div>
   </div>
 </section>
 
 <!-- PULLQUOTE -->
-<section class="section section-white" style="padding:60px 24px;">
-  <div class="section-inner">
-    <div class="pullquote">
-      "The best Realtors don't just train their business.<br>They train their mind."
-    </div>
-  </div>
+<section class="pullquote-section">
+  <p class="pullquote">"The best Realtors don't just train their business.<br>They train their mind."</p>
 </section>
 
 <!-- PRICING -->
-<section class="section section-cream">
-  <div class="section-inner" style="text-align:center;">
-    <span class="section-label">Investment</span>
-    <h2 class="section-title">Everything You Need. One Simple Price.</h2>
+<section class="pricing">
+  <div class="pricing-inner">
+    <span class="section-label" style="text-align:center;display:block;margin-bottom:12px;">Investment</span>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,36px);font-weight:700;color:var(--navy);margin-bottom:32px;text-align:center;">Everything You Need.<br>One Simple Price.</h2>
 
     <div class="pricing-box">
       <h3>Close More. Stress Less.</h3>
@@ -499,17 +549,20 @@ body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--text
       <p class="pricing-note">One payment · Lifetime access · Instant download</p>
 
       <ul class="pricing-includes">
-        <li>7 guided audio sessions</li>
-        <li>Morning Reset (7:01)</li>
-        <li>Deal Recovery Session (7:00)</li>
-        <li>Peak Performance Visualization (6:08)</li>
-        <li>Sleep Reset (11:58)</li>
-        <li>Abundance Activation (5:10)</li>
-        <li>Mind for Production (5:58)</li>
-        <li>Consistency Training (8:34)</li>
-        <li>5 PDF workbooks and guides</li>
-        <li>6 bonus sessions including 90-Second Confidence Reset</li>
-        <li>The Quantum Mirror Method (15:15)</li>
+        <li>7 guided audio sessions (Reset · Rewire · Perform)</li>
+        <li>Morning Performance Reset™ (7:01)</li>
+        <li>Deal Recovery Protocol™ (7:00)</li>
+        <li>Peak Performance Visualization™ (6:08)</li>
+        <li>Sleep Reset™ (11:58)</li>
+        <li>Listing Confidence Reset™ (5:10)</li>
+        <li>Mind for Production™ (5:58)</li>
+        <li>Consistency Conditioning™ (8:34)</li>
+        <li>5 PDF workbooks and performance guides</li>
+        <li>90-Second Confidence Reset™ (1:35)</li>
+        <li>Pre-Prospecting Primer™ (2:46)</li>
+        <li>Quick Night Reset™ (6:05)</li>
+        <li>Cycle Breaker Session™ (8:34)</li>
+        <li>The Quantum Mirror Method™ (15:15)</li>
         <li>Your Realtor Anthem — both voice versions</li>
         <li>30-day money-back guarantee</li>
       </ul>
@@ -522,8 +575,8 @@ body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--text
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-  <h2>This Business Is Hard.<br><em>You Don't Have to Figure Out the Mental Side Alone.</em></h2>
-  <p>Nobody teaches Realtors how to train their mind. Until now. Everything I learned in 25 years — organized into one program, built specifically for you.</p>
+  <h2>This Business Is Hard.<br><em>You Don't Have to Figure Out<br>the Mental Side Alone.</em></h2>
+  <p>Nobody teaches Realtors how to train their mind. Until now. Built by a 25-year veteran who lived everything this program addresses.</p>
   <a href="https://buy.stripe.com/bJe28q7ef4mu9yT0lAdby00" class="final-btn">Get Instant Access — $47</a>
   <p style="font-size:12px;color:rgba(255,255,255,0.35);margin-top:16px;">30-day money-back guarantee · One payment · Lifetime access</p>
 </section>
@@ -532,7 +585,7 @@ body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--text
 <footer class="footer">
   <p>
     © 2026 REI & REO Realty LLC · Close More. Stress Less. · <a href="mailto:hello@aethura.app">hello@aethura.app</a><br>
-    <a href="index.html">Aethura App</a> · Phoenix, Arizona
+    <a href="index.html">Aethura App</a> · Phoenix, Arizona · <a href="close-more-stress-less.html">Read the Article</a>
   </p>
 </footer>
 
