@@ -129,7 +129,66 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
   .form-box,.success-box{padding:24px 18px;}
   .dave-inner{flex-direction:column;}
 }
+
+/* Brevo form overrides — match page style */
+#sib-container {
+  background-color: transparent !important;
+  border: none !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+#sib-form .sib-form-block p {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--text) !important;
+}
+#sib-form .entry__label {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--text) !important;
+}
+#sib-form .input {
+  width: 100% !important;
+  padding: 13px 15px !important;
+  border: 1.5px solid var(--border) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  color: var(--text) !important;
+  background: var(--cream) !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#sib-form .input:focus {
+  border-color: var(--gold) !important;
+}
+#sib-form .sib-form-block__button {
+  width: 100% !important;
+  background: var(--gold) !important;
+  color: var(--navy) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  padding: 18px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+}
+#sib-form .sib-form-block__button:hover {
+  background: var(--gold-light) !important;
+}
+.sib-form { background-color: transparent !important; }
+.entry__specification { display: none !important; }
+#sib-form .sib-form-block:first-child { display: none !important; }
+#sib-form .sib-form-block:nth-child(2) { display: none !important; }
+#success-message, #error-message { max-width: 100% !important; }
 </style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body>
 
@@ -189,50 +248,33 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
 <!-- FORM SECTION -->
 <div class="form-wrap">
 
-  <!-- FORM STATE -->
-  <div class="form-box" id="form-container">
-    <h2>Start Training Your Mind — Free</h2>
-    <p>Built by a Realtor with 25+ years of experience. I'll send the complete Realtor Mental Performance Starter Kit to your inbox immediately.</p>
+  <!-- BREVO FORM -->
+  <div class="form-box" style="padding:32px;">
+    <h2 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:8px;">Start Training Your Mind — Free</h2>
+    <p style="font-size:13px;color:var(--text-light);margin-bottom:20px;line-height:1.6;">Built by a Realtor with 25+ years of experience. I'll send the complete Realtor Mental Performance Starter Kit to your inbox immediately.</p>
 
-    <form id="kit-form" onsubmit="handleSubmit(event)">
+    <form id="sib-form" method="POST" action="https://1e88675d.sibforms.com/serve/MUIFALNrIOxaAXop-D0jLvh1AcgV1M_hR88hgmPIkzsPmaUgbtWvT-fgIUjaAy8n098phZteqcTSaEyCOFA9t77JZw-FBa7r1u-muCyvxFU1wPTWbwajhLMAkYx_oO4Ss_KyJ1GAxj3jZC190y6bw62Y27yOcwydYt2w838jb4wsSj5dt74r3yBVKoHsOg5FzAfa6TeMmV6UdCeZjw==" data-type="subscription">
+
       <div class="form-group">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+        <label for="FIRSTNAME">First Name</label>
+        <input class="input" maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="Your first name" data-required="true" required />
       </div>
+
       <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        <label for="EMAIL">Email Address</label>
+        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
       </div>
-      <button type="submit" class="submit-btn" id="submit-btn">Start Training My Mind — Free →</button>
-      <p class="btn-sub">Instant access. Read today. Start using right away.</p>
-      <p class="form-privacy">You'll receive the free kit immediately plus occasional practical tips I've learned over 25 years in real estate. Unsubscribe anytime.</p>
+
+      <button class="sib-form-block__button submit-btn" type="submit">
+        Start Training My Mind — Free →
+      </button>
+
+      <p style="font-size:11px;color:var(--text-light);text-align:center;margin-top:8px;line-height:1.5;">Instant access. Read today. Start using right away.</p>
+      <p style="font-size:11px;color:var(--text-light);text-align:center;margin-top:8px;line-height:1.6;padding-top:10px;border-top:1px solid var(--border);">You'll receive the free kit immediately plus occasional practical tips I've learned over 25 years in real estate. Unsubscribe anytime.</p>
+
+      <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
+      <input type="hidden" name="locale" value="en">
     </form>
-  </div>
-
-  <!-- SUCCESS STATE -->
-  <div class="success-box" id="success-container">
-    <div class="success-icon" style="text-align:center;">✅</div>
-    <h2 style="text-align:center;">Welcome. Your Kit Is On Its Way.</h2>
-    <p class="intro-p">Check your inbox in the next few minutes — the PDFs and everything else are headed to you now.</p>
-
-    <div class="check-email">
-      <p><strong>Tip:</strong> Check your spam folder if you don't see it within 5 minutes. Add hello@aethura.app to your contacts to make sure future emails reach your inbox.</p>
-    </div>
-
-    <span class="audio-reveal-label">While you wait — your 90-Second Confidence Reset:</span>
-    <div class="audio-reveal-box">
-      <div class="arh">
-        <span style="font-size:20px;">⚡</span>
-        <div>
-          <strong>90-Second Confidence Reset</strong>
-          <span>Use before every listing appointment</span>
-        </div>
-      </div>
-      <audio controls preload="auto" style="width:100%;">
-        <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_07_confidence_reset_bonus.mp3" type="audio/mpeg">
-      </audio>
-      <p class="audio-usage">Listen to this in your car before you walk into any appointment. It takes less time than checking your phone in the parking lot — and does a lot more for your next conversation.</p>
-    </div>
   </div>
 
 </div>
@@ -276,48 +318,32 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
 </footer>
 
 <script>
-function handleSubmit(e) {
-  e.preventDefault();
-  const firstName = document.getElementById('first-name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const btn = document.getElementById('submit-btn');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  window.INVALID_NUMBER = "The information provided is invalid. Please review the field format and try again.";
+  window.INVALID_DATE = "Please enter a valid date";
+  window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
+  window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
+  var AUTOHIDE = Boolean(0);
 
-  gtag('event', 'generate_lead', {
-    'event_category': 'Free Kit',
-    'event_label': 'Starter Kit Opt-in',
-    'value': 1
+  // Track conversion when form submits
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('sib-form');
+    if (form) {
+      form.addEventListener('submit', function() {
+        gtag('event', 'generate_lead', {
+          'event_category': 'Free Kit',
+          'event_label': 'Starter Kit Opt-in',
+          'value': 1
+        });
+      });
+    }
   });
-
-  // Brevo API — replace with your actual values
-  const BREVO_API_KEY = 'YOUR_BREVO_API_KEY';
-  const BREVO_LIST_ID = 0; // Replace with your list ID number
-
-  fetch('https://api.brevo.com/v3/contacts', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'api-key': BREVO_API_KEY
-    },
-    body: JSON.stringify({
-      email: email,
-      attributes: { FIRSTNAME: firstName },
-      listIds: [BREVO_LIST_ID],
-      updateEnabled: true
-    })
-  })
-  .then(() => showSuccess())
-  .catch(err => { console.error('Brevo error:', err); showSuccess(); });
-}
-
-function showSuccess() {
-  document.getElementById('form-container').style.display = 'none';
-  document.getElementById('success-container').style.display = 'block';
-  document.getElementById('success-container').scrollIntoView({behavior:'smooth', block:'center'});
-}
 </script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 </body>
 </html>
