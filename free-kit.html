@@ -80,7 +80,16 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
 .success-box .check-email p{font-size:14px;color:var(--navy);margin:0;}
 .success-box .check-email strong{color:var(--gold);}
 
-
+/* AUDIO PREVIEW */
+.audio-section{max-width:520px;margin:0 auto;padding:0 24px 64px;}
+.audio-label{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;text-align:center;}
+.audio-box{background:rgba(200,164,90,0.06);border:1px solid rgba(200,164,90,0.2);padding:24px 28px;}
+.audio-header{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.audio-header .audio-icon{font-size:22px;flex-shrink:0;}
+.audio-header strong{display:block;font-size:14px;color:var(--white);margin-bottom:2px;}
+.audio-header span{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;}
+.audio-box audio{width:100%;}
+.audio-note{font-size:11px;color:rgba(255,255,255,0.35);text-align:center;margin-top:8px;}
 
 /* DAVE SECTION */
 .dave-section{max-width:520px;margin:0 auto;padding:0 24px 64px;}
@@ -152,7 +161,23 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
   </div>
 </section>
 
-
+<!-- AUDIO PREVIEW -->
+<div class="audio-section">
+  <span class="audio-label">Preview the 90-Second Confidence Reset</span>
+  <div class="audio-box">
+    <div class="audio-header">
+      <span class="audio-icon">⚡</span>
+      <div>
+        <strong>90-Second Confidence Reset</strong>
+        <span>Listen in your car before any appointment</span>
+      </div>
+    </div>
+    <audio controls preload="none" style="width:100%;">
+      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_07_confidence_reset_bonus.mp3" type="audio/mpeg">
+    </audio>
+    <p class="audio-note">This session is included in your free kit — enter your name and email below to get all four tools instantly.</p>
+  </div>
+</div>
 
 <!-- FORM -->
 <div class="form-section">
@@ -160,7 +185,7 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
   <!-- FORM STATE -->
   <div class="form-box" id="form-container">
     <h2>Get Your Free Kit Instantly</h2>
-    <p>Enter your name and email and I'll send everything to your inbox right now — including instant access to the 90-Second Confidence Reset audio. No purchase required — ever.</p>
+    <p>Enter your name and email and I'll send everything to your inbox right now. No purchase required — ever.</p>
 
     <form id="kit-form" onsubmit="handleSubmit(event)">
       <div class="form-group">
@@ -181,28 +206,12 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
   <!-- SUCCESS STATE -->
   <div class="success-box" id="success-container">
     <div class="success-icon">✅</div>
-    <h2>Welcome. Your Kit Is On Its Way.</h2>
-    <p>Check your inbox in the next few minutes — the PDFs and links are headed to you now.</p>
+    <h2>Your Kit Is On Its Way</h2>
+    <p>Check your inbox in the next few minutes — you'll have all three tools waiting for you.</p>
     <div class="check-email">
-      <p><strong>Check your spam folder</strong> if you don't see it within 5 minutes. Add hello@aethura.app to your contacts so future emails land in your inbox.</p>
+      <p><strong>Check your spam folder</strong> if you don't see it within 5 minutes. Add hello@aethura.app to your contacts to make sure future emails land in your inbox.</p>
     </div>
-
-    <p style="font-size:13px;font-weight:700;color:var(--navy);text-align:left;margin-bottom:10px;letter-spacing:0.05em;text-transform:uppercase;">While you wait — listen to your 90-Second Confidence Reset:</p>
-
-    <div style="background:var(--cream);border-left:4px solid var(--gold);padding:18px 20px;margin-bottom:16px;">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-        <span style="font-size:20px;">⚡</span>
-        <div>
-          <strong style="display:block;font-size:14px;color:var(--navy);">90-Second Confidence Reset</strong>
-          <span style="font-size:11px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.08em;">Listen before your next appointment</span>
-        </div>
-      </div>
-      <audio controls preload="auto" style="width:100%;">
-        <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_07_confidence_reset_bonus.mp3" type="audio/mpeg">
-      </audio>
-    </div>
-
-    <p style="font-size:13px;color:var(--text-light);line-height:1.6;">Use this every time before you walk into a listing appointment. It takes less time than checking your phone in the parking lot.</p>
+    <p style="font-size:14px;color:var(--text-light);">While you wait — listen to the 90-Second Confidence Reset above. That's the first thing in your kit.</p>
   </div>
 
 </div>
