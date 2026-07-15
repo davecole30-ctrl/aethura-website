@@ -253,7 +253,7 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
     <h2 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:8px;">Start Training Your Mind — Free</h2>
     <p style="font-size:13px;color:var(--text-light);margin-bottom:20px;line-height:1.6;">Built by a Realtor with 25+ years of experience. I'll send the complete Realtor Mental Performance Starter Kit to your inbox immediately.</p>
 
-    <form id="sib-form" method="POST" action="https://1e88675d.sibforms.com/serve/MUIFALNrIOxaAXop-D0jLvh1AcgV1M_hR88hgmPIkzsPmaUgbtWvT-fgIUjaAy8n098phZteqcTSaEyCOFA9t77JZw-FBa7r1u-muCyvxFU1wPTWbwajhLMAkYx_oO4Ss_KyJ1GAxj3jZC190y6bw62Y27yOcwydYt2w838jb4wsSj5dt74r3yBVKoHsOg5FzAfa6TeMmV6UdCeZjw==" data-type="subscription">
+    <form id="sib-form" method="POST" action="https://1e88675d.sibforms.com/serve/MUIFALNrIOxaAXop-D0jLvh1AcgV1M_hR88hgmPIkzsPmaUgbtWvT-fgIUjaAy8n098phZteqcTSaEyCOFA9t77JZw-FBa7r1u-muCyvxFU1wPTWbwajhLMAkYx_oO4Ss_KyJ1GAxj3jZC190y6bw62Y27yOcwydYt2w838jb4wsSj5dt74r3yBVKoHsOg5FzAfa6TeMmV6UdCeZjw==">
 
       <div class="form-group">
         <label for="FIRSTNAME">First Name</label>
@@ -318,32 +318,23 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
 </footer>
 
 <script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-  window.LOCALE = 'en';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
-  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-  window.INVALID_NUMBER = "The information provided is invalid. Please review the field format and try again.";
-  window.INVALID_DATE = "Please enter a valid date";
-  window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
-  window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
-  var AUTOHIDE = Boolean(0);
-
   // Track conversion when form submits
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('sib-form');
     if (form) {
       form.addEventListener('submit', function() {
-        gtag('event', 'generate_lead', {
-          'event_category': 'Free Kit',
-          'event_label': 'Starter Kit Opt-in',
-          'value': 1
-        });
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'generate_lead', {
+            'event_category': 'Free Kit',
+            'event_label': 'Starter Kit Opt-in',
+            'value': 1
+          });
+        }
       });
     }
   });
 </script>
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
 
 </body>
 </html>
