@@ -336,5 +336,23 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
 </script>
 
 
+<script>
+// Show success message if redirected back after Brevo form submit
+if (document.referrer.includes('sibforms.com') ||
+    window.location.search.includes('success')) {
+  var formBox = document.querySelector('.form-box');
+  if (formBox) {
+    formBox.innerHTML = '<div style="text-align:center;padding:20px 0;">' +
+      '<div style="font-size:48px;margin-bottom:16px;">✅</div>' +
+      '<h2 style="font-family:Playfair Display,serif;font-size:22px;font-weight:700;color:#0f1923;margin-bottom:12px;">Welcome. Your Kit Is On Its Way.</h2>' +
+      '<p style="font-size:14px;color:#718096;line-height:1.7;margin-bottom:16px;">Check your inbox in the next few minutes. Check spam if you don\'t see it — add hello@aethura.app to your contacts.</p>' +
+      '<div style="background:#f5edd8;border-left:4px solid #c8a45a;padding:14px 16px;text-align:left;">' +
+      '<p style="font-size:13px;color:#0f1923;margin:0;">While you wait — your <strong>90-Second Confidence Reset</strong> is ready to play:<br><br>' +
+      '<audio controls preload="auto" style="width:100%;margin-top:8px;">' +
+      '<source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_07_confidence_reset_bonus.mp3" type="audio/mpeg">' +
+      '</audio></p></div></div>';
+  }
+}
+</script>
 </body>
 </html>
