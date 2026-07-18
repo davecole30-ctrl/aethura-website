@@ -7,7 +7,7 @@
 <meta name="description" content="Free for Realtors — The Mental Performance Starter Kit. 90-Second Confidence Reset audio, the 7 mistakes guide, and the 5-Minute Performance Reset checklist. No purchase required.">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Free Realtor Mental Performance Starter Kit">
-<meta property="og:description" content="Free for Realtors — 90-Second Confidence Reset audio, the 7 mistakes guide, and the 5-Minute Performance Reset checklist.">
+<meta property="og:description" content="Nobody teaches Realtors how to train their mind. Until now. Free kit includes the 90-Second Confidence Reset, the 7 Mental Mistakes guide, and the 5-Minute Morning Reset checklist.">
 <meta property="og:url" content="https://aethura.app/free-kit">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://aethura.app/dave-cole-realtor.png">
@@ -28,192 +28,280 @@
   --navy:#0f1923; --navy-mid:#1a2535; --gold:#c8a45a; --gold-light:#dfc07a;
   --gold-pale:#f5edd8; --cream:#faf7f2; --white:#ffffff;
   --text:#2d3748; --text-light:#718096; --border:#e8e0d0;
-  --green:#27ae60; --green-light:#2ecc71;
+  --green:#27ae60;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);line-height:1.7;min-height:100vh;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);line-height:1.7;}
 
 /* HEADER */
-.header{background:rgba(0,0,0,0.3);padding:16px 40px;text-align:center;border-bottom:1px solid rgba(200,164,90,0.15);}
-.header-logo{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);text-decoration:none;}
+.header{background:rgba(0,0,0,0.3);padding:14px 40px;text-align:center;border-bottom:1px solid rgba(200,164,90,0.15);}
+.header-logo{font-family:'Playfair Display',serif;font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);text-decoration:none;}
 
 /* HERO */
-.hero{padding:64px 24px 48px;text-align:center;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(200,164,90,0.1) 0%,transparent 60%);pointer-events:none;}
-.free-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(39,174,96,0.15);border:1px solid rgba(39,174,96,0.35);color:#5dde8a;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;padding:8px 20px;margin-bottom:24px;border-radius:100px;}
-.free-dot{width:8px;height:8px;border-radius:50%;background:#5dde8a;animation:pulse 2s infinite;}
+.hero{padding:56px 24px 0;text-align:center;position:relative;overflow:hidden;max-width:720px;margin:0 auto;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(200,164,90,0.08) 0%,transparent 60%);pointer-events:none;}
+.free-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(39,174,96,0.12);border:1px solid rgba(39,174,96,0.3);color:#5dde8a;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;padding:7px 18px;margin-bottom:20px;border-radius:100px;}
+.free-dot{width:7px;height:7px;border-radius:50%;background:#5dde8a;animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
-.hero-eyebrow{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block;}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,56px);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:16px;letter-spacing:-0.01em;}
+.hero-training{font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px;font-weight:700;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(26px,4.5vw,48px);font-weight:900;color:var(--white);line-height:1.15;margin-bottom:8px;}
 .hero h1 em{color:var(--gold);font-style:italic;}
-.hero-sub{font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,0.7);max-width:580px;margin:0 auto 12px;line-height:1.7;}
-.hero-credit{font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:40px;}
-.hero-credit strong{color:rgba(255,255,255,0.65);}
+.hero-kit-name{font-family:'Playfair Display',serif;font-size:clamp(16px,2.5vw,22px);font-style:italic;color:rgba(255,255,255,0.7);margin-bottom:20px;line-height:1.4;}
+.hero-sub{font-size:clamp(15px,2vw,17px);color:rgba(255,255,255,0.75);max-width:580px;margin:0 auto 36px;line-height:1.75;}
 
-/* WHAT'S INSIDE PREVIEW */
-.kit-preview{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:48px;}
-.kit-item{background:rgba(200,164,90,0.08);border:1px solid rgba(200,164,90,0.2);padding:14px 20px;display:flex;align-items:center;gap:10px;max-width:260px;}
-.kit-item-icon{font-size:20px;flex-shrink:0;}
-.kit-item-text strong{display:block;font-size:13px;font-weight:600;color:var(--white);margin-bottom:2px;}
-.kit-item-text span{font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.08em;}
+/* IF THIS SOUNDS FAMILIAR */
+.familiar{background:rgba(200,164,90,0.06);border:1px solid rgba(200,164,90,0.18);border-left:4px solid var(--gold);padding:24px 28px;margin:0 auto 40px;max-width:560px;text-align:left;}
+.familiar-item{font-size:14px;color:rgba(255,255,255,0.82);line-height:1.75;padding:4px 0;}
+.familiar-item .check{color:var(--gold);font-weight:700;margin-right:8px;}
+.familiar-item.indent{padding-left:22px;color:rgba(255,255,255,0.55);font-style:italic;font-size:13px;}
+.familiar-close{font-size:14px;font-weight:600;color:var(--gold);margin-top:14px;padding-top:14px;border-top:1px solid rgba(200,164,90,0.2);}
+
+/* KIT CARDS */
+.kit-cards{display:flex;flex-direction:column;gap:12px;max-width:560px;margin:0 auto 48px;}
+.kit-card{background:var(--navy-mid);border:1px solid rgba(200,164,90,0.15);border-left:4px solid var(--gold);padding:18px 20px;text-align:left;display:flex;gap:16px;align-items:flex-start;}
+.kit-card-icon{font-size:24px;flex-shrink:0;margin-top:2px;}
+.kit-card-text strong{display:block;font-size:15px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.kit-card-text p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;margin:0;}
 
 /* FORM SECTION */
-.form-section{max-width:520px;margin:0 auto;padding:0 24px 64px;}
-.form-box{background:var(--white);padding:40px 36px;}
-.form-box h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3;}
-.form-box p{font-size:14px;color:var(--text-light);margin-bottom:24px;line-height:1.6;}
-.form-group{margin-bottom:16px;}
-.form-group label{display:block;font-size:12px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--text);margin-bottom:6px;}
-.form-group input{width:100%;padding:14px 16px;border:1.5px solid var(--border);font-family:'Inter',sans-serif;font-size:15px;color:var(--text);background:var(--cream);outline:none;transition:border-color 0.2s;}
+.form-wrap{max-width:520px;margin:0 auto;padding:0 24px 64px;}
+
+.form-box{background:var(--white);padding:36px 32px;}
+.form-box h2{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+.form-box p{font-size:13px;color:var(--text-light);margin-bottom:20px;line-height:1.6;}
+.form-group{margin-bottom:14px;}
+.form-group label{display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text);margin-bottom:5px;}
+.form-group input{width:100%;padding:13px 15px;border:1.5px solid var(--border);font-family:'Inter',sans-serif;font-size:15px;color:var(--text);background:var(--cream);outline:none;transition:border-color 0.2s;}
 .form-group input:focus{border-color:var(--gold);}
 .form-group input::placeholder{color:var(--text-light);}
-.submit-btn{width:100%;background:var(--gold);color:var(--navy);font-family:'Inter',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:18px;border:none;cursor:pointer;transition:all 0.2s;margin-top:8px;}
+.submit-btn{width:100%;background:var(--gold);color:var(--navy);font-family:'Inter',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:18px;border:none;cursor:pointer;transition:all 0.2s;margin-top:6px;}
 .submit-btn:hover{background:var(--gold-light);}
-.form-privacy{font-size:11px;color:var(--text-light);text-align:center;margin-top:12px;line-height:1.5;}
+.btn-sub{font-size:11px;color:var(--text-light);text-align:center;margin-top:8px;line-height:1.5;}
+.form-privacy{font-size:11px;color:var(--text-light);text-align:center;margin-top:10px;line-height:1.6;padding-top:10px;border-top:1px solid var(--border);}
 
 /* SUCCESS STATE */
-.success-box{display:none;background:var(--white);padding:40px 36px;text-align:center;}
-.success-icon{font-size:48px;margin-bottom:16px;}
-.success-box h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:12px;}
-.success-box p{font-size:15px;color:var(--text-light);line-height:1.7;margin-bottom:20px;}
-.success-box .check-email{background:var(--gold-pale);border-left:4px solid var(--gold);padding:14px 18px;text-align:left;margin-bottom:20px;}
-.success-box .check-email p{font-size:14px;color:var(--navy);margin:0;}
-.success-box .check-email strong{color:var(--gold);}
+.success-box{display:none;background:var(--white);padding:36px 32px;}
+.success-icon{font-size:44px;margin-bottom:14px;text-align:center;}
+.success-box h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px;text-align:center;}
+.success-box .intro-p{font-size:14px;color:var(--text-light);line-height:1.7;margin-bottom:16px;text-align:center;}
+.check-email{background:var(--gold-pale);border-left:4px solid var(--gold);padding:12px 16px;margin-bottom:18px;}
+.check-email p{font-size:13px;color:var(--navy);margin:0;line-height:1.6;}
+.audio-reveal-label{font-size:11px;font-weight:700;color:var(--navy);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;display:block;}
+.audio-reveal-box{background:var(--cream);border-left:4px solid var(--gold);padding:16px 18px;margin-bottom:12px;}
+.audio-reveal-box .arh{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.audio-reveal-box .arh strong{display:block;font-size:14px;color:var(--navy);margin-bottom:2px;}
+.audio-reveal-box .arh span{font-size:11px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.08em;}
+.audio-reveal-box audio{width:100%;}
+.audio-usage{font-size:12px;color:var(--text-light);line-height:1.6;margin-top:8px;}
 
-/* AUDIO PREVIEW */
-.audio-section{max-width:520px;margin:0 auto;padding:0 24px 64px;}
-.audio-label{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;text-align:center;}
-.audio-box{background:rgba(200,164,90,0.06);border:1px solid rgba(200,164,90,0.2);padding:24px 28px;}
-.audio-header{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
-.audio-header .audio-icon{font-size:22px;flex-shrink:0;}
-.audio-header strong{display:block;font-size:14px;color:var(--white);margin-bottom:2px;}
-.audio-header span{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;}
-.audio-box audio{width:100%;}
-.audio-note{font-size:11px;color:rgba(255,255,255,0.35);text-align:center;margin-top:8px;}
+/* SOCIAL PROOF */
+.social-proof{max-width:520px;margin:0 auto;padding:0 24px 48px;}
+.sp-box{background:rgba(200,164,90,0.06);border:1px solid rgba(200,164,90,0.18);padding:20px 24px;text-align:center;}
+.sp-box p{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7;font-style:italic;}
+.sp-box strong{color:var(--gold);font-style:normal;}
 
 /* DAVE SECTION */
-.dave-section{max-width:520px;margin:0 auto;padding:0 24px 64px;}
-.dave-card{background:var(--navy-mid);border:1px solid rgba(200,164,90,0.15);border-left:4px solid var(--gold);padding:28px 28px;}
+.dave-section{max-width:520px;margin:0 auto;padding:0 24px 48px;}
+.dave-card{background:var(--navy-mid);border:1px solid rgba(200,164,90,0.15);border-left:4px solid var(--gold);padding:24px;}
 .dave-inner{display:flex;gap:20px;align-items:flex-start;}
 .dave-photo{width:72px;height:90px;object-fit:cover;object-position:center 10%;border:2px solid var(--gold);flex-shrink:0;}
-.dave-text strong{display:block;font-size:15px;color:var(--white);margin-bottom:2px;}
-.dave-text .dave-title{font-size:12px;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;display:block;}
-.dave-text p{font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;}
+.dave-text strong{display:block;font-size:14px;color:var(--white);margin-bottom:2px;}
+.dave-text .dave-title{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;display:block;}
+.dave-text p{font-size:13px;color:rgba(255,255,255,0.68);line-height:1.75;margin-bottom:8px;}
+.dave-text p:last-child{margin-bottom:0;}
 
 /* PROGRAM LINK */
-.program-link{max-width:520px;margin:0 auto;padding:0 24px 80px;text-align:center;}
-.program-link p{font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:12px;}
+.program-link{max-width:520px;margin:0 auto;padding:0 24px 72px;text-align:center;}
+.program-link p{font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:10px;}
 .program-link a{color:var(--gold);text-decoration:none;font-size:14px;}
 .program-link a:hover{color:var(--gold-light);}
 
 /* FOOTER */
-.footer{background:rgba(0,0,0,0.3);padding:24px 40px;text-align:center;border-top:1px solid rgba(200,164,90,0.1);}
+.footer{background:rgba(0,0,0,0.3);padding:20px 40px;text-align:center;border-top:1px solid rgba(200,164,90,0.1);}
 .footer p{font-size:11px;color:rgba(255,255,255,0.3);line-height:1.7;}
 .footer a{color:rgba(200,164,90,0.5);text-decoration:none;}
 
 @media(max-width:600px){
-  .header{padding:16px 20px;}
-  .hero{padding:48px 20px 36px;}
-  .kit-preview{flex-direction:column;align-items:center;}
-  .form-box, .success-box{padding:28px 20px;}
+  .header{padding:14px 20px;}
+  .hero{padding:40px 20px 0;}
+  .familiar{margin:0 20px 32px;}
+  .kit-cards{margin:0 0 36px;}
+  .form-box,.success-box{padding:24px 18px;}
   .dave-inner{flex-direction:column;}
 }
+
+/* Brevo form overrides — match page style */
+#sib-container {
+  background-color: transparent !important;
+  border: none !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+#sib-form .sib-form-block p {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--text) !important;
+}
+#sib-form .entry__label {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--text) !important;
+}
+#sib-form .input {
+  width: 100% !important;
+  padding: 13px 15px !important;
+  border: 1.5px solid var(--border) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  color: var(--text) !important;
+  background: var(--cream) !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#sib-form .input:focus {
+  border-color: var(--gold) !important;
+}
+#sib-form .sib-form-block__button {
+  width: 100% !important;
+  background: var(--gold) !important;
+  color: var(--navy) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  padding: 18px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+}
+#sib-form .sib-form-block__button:hover {
+  background: var(--gold-light) !important;
+}
+.sib-form { background-color: transparent !important; }
+.entry__specification { display: none !important; }
+#sib-form .sib-form-block:first-child { display: none !important; }
+#sib-form .sib-form-block:nth-child(2) { display: none !important; }
+#success-message, #error-message { max-width: 100% !important; }
 </style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
-  <a href="index.html" class="header-logo">Aethura</a>
+  <a href="index.html" class="header-logo">Aethura · Close More. Stress Less.</a>
 </header>
 
 <!-- HERO -->
+<div style="max-width:720px;margin:0 auto;padding:0 24px;">
 <section class="hero">
-  <div class="free-badge"><div class="free-dot"></div>100% Free · No Purchase Required</div>
-  <span class="hero-eyebrow">For Licensed Real Estate Professionals</span>
-  <h1>The Realtor Mental<br><em>Performance Starter Kit</em></h1>
-  <p class="hero-sub">Four tools to help you show up calmer, more confident, and more present — starting tomorrow morning.</p>
-  <p class="hero-credit">From <strong>Dave Cole</strong> · Licensed Broker · 25+ Years · REI & REO Realty LLC</p>
+  <div class="free-badge"><div class="free-dot"></div>Free · No Purchase Required · Instant Access</div>
+  <span class="hero-training">Free Training</span>
+  <h1>Nobody Teaches Realtors<br>How to Train Their Mind.<br><em>Until Now.</em></h1>
+  <p class="hero-kit-name">The Free Realtor Mental Performance Starter Kit</p>
+  <p class="hero-sub">Stop carrying yesterday's stress into today's appointments. Learn the daily mental habits that help Realtors stay calm under pressure, recover from rejection, and break the feast-or-famine cycle.</p>
 
-  <!-- KIT PREVIEW -->
-  <div class="kit-preview">
-    <div class="kit-item">
-      <span class="kit-item-icon">🎧</span>
-      <div class="kit-item-text">
-        <strong>90-Second Confidence Reset</strong>
-        <span>Audio · Use before appointments</span>
+  <!-- INLINE FORM - above fold -->
+  <div style="background:var(--white);padding:28px 24px;max-width:440px;margin:0 auto 8px;text-align:left;">
+    <p style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px;">Get the Free Kit Instantly</p>
+    <p style="font-size:12px;color:var(--text-light);margin-bottom:16px;line-height:1.5;">No purchase required. Instant access.</p>
+    <form id="sib-form-top" method="POST" action="https://1e88675d.sibforms.com/serve/MUIFALNrIOxaAXop-D0jLvh1AcgV1M_hR88hgmPIkzsPmaUgbtWvT-fgIUjaAy8n098phZteqcTSaEyCOFA9t77JZw-FBa7r1u-muCyvxFU1wPTWbwajhLMAkYx_oO4Ss_KyJ1GAxj3jZC190y6bw62Y27yOcwydYt2w838jb4wsSj5dt74r3yBVKoHsOg5FzAfa6TeMmV6UdCeZjw==">
+      <div style="margin-bottom:10px;">
+        <input class="input" maxlength="200" type="text" name="FIRSTNAME" autocomplete="off" placeholder="First name" data-required="true" required style="width:100%;padding:12px 14px;border:1.5px solid var(--border);font-family:Inter,sans-serif;font-size:14px;color:var(--text);background:var(--cream);outline:none;box-sizing:border-box;border-radius:0;">
       </div>
-    </div>
-    <div class="kit-item">
-      <span class="kit-item-icon">📘</span>
-      <div class="kit-item-text">
-        <strong>Why Good Realtors Stay Stuck</strong>
-        <span>PDF Guide · 7 patterns explained</span>
+      <div style="margin-bottom:12px;">
+        <input class="input" type="email" name="EMAIL" autocomplete="off" placeholder="Email address" data-required="true" required style="width:100%;padding:12px 14px;border:1.5px solid var(--border);font-family:Inter,sans-serif;font-size:14px;color:var(--text);background:var(--cream);outline:none;box-sizing:border-box;border-radius:0;">
       </div>
-    </div>
-    <div class="kit-item">
-      <span class="kit-item-icon">📋</span>
-      <div class="kit-item-text">
-        <strong>5-Minute Performance Reset™</strong>
-        <span>Checklist · Use every morning</span>
-      </div>
-    </div>
+      <button type="submit" style="width:100%;background:var(--gold);color:var(--navy);font-family:Inter,sans-serif;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:16px;border:none;cursor:pointer;border-radius:0;">SEND ME THE FREE KIT →</button>
+      <p style="font-size:11px;color:rgba(255,255,255,0.45);text-align:center;margin-top:8px;">Instant access. No credit card. Unsubscribe anytime.</p>
+      <input type="text" name="email_address_check" value="" style="display:none;">
+      <input type="hidden" name="locale" value="en">
+    </form>
   </div>
 </section>
 
-<!-- AUDIO PREVIEW -->
-<div class="audio-section">
-  <span class="audio-label">Preview the 90-Second Confidence Reset</span>
-  <div class="audio-box">
-    <div class="audio-header">
-      <span class="audio-icon">⚡</span>
-      <div>
-        <strong>90-Second Confidence Reset</strong>
-        <span>Listen in your car before any appointment</span>
-      </div>
-    </div>
-    <audio controls preload="none" style="width:100%;">
-      <source src="https://mijvncndgakjvlhczuzl.supabase.co/storage/v1/object/public/audio/cmsl_07_confidence_reset_bonus.mp3" type="audio/mpeg">
-    </audio>
-    <p class="audio-note">This session is included in your free kit — enter your name and email below to get all four tools instantly.</p>
-  </div>
+<!-- IF THIS SOUNDS FAMILIAR -->
+<div class="familiar">
+  <p style="font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:700;">If this sounds familiar...</p>
+  <div class="familiar-item"><span class="check">✓</span>You replay conversations long after they end.</div>
+  <div class="familiar-item"><span class="check">✓</span>You carry one bad transaction into the next appointment.</div>
+  <div class="familiar-item"><span class="check">✓</span>Some months you're overwhelmed...</div>
+  <div class="familiar-item indent">...and six weeks later you're wondering where all the business went.</div>
+  <div class="familiar-item"><span class="check">✓</span>You love real estate...</div>
+  <div class="familiar-item indent">...you just don't love what the stress is doing to you.</div>
+  <p class="familiar-close">This free kit was built for you.</p>
 </div>
 
-<!-- FORM -->
-<div class="form-section">
+<!-- KIT CARDS -->
+<div class="kit-cards">
+  <div class="kit-card">
+    <span class="kit-card-icon">🎧</span>
+    <div class="kit-card-text">
+      <strong>The 90-Second Confidence Reset</strong>
+      <p>The audio Realtors use before important appointments. Walk into every listing presentation calm, focused, and fully present.</p>
+    </div>
+  </div>
+  <div class="kit-card">
+    <span class="kit-card-icon">📘</span>
+    <div class="kit-card-text">
+      <strong>The 7 Mental Mistakes That Keep Realtors Stuck</strong>
+      <p>Learn what's silently feeding the feast-or-famine cycle — and what top producers do instead.</p>
+    </div>
+  </div>
+  <div class="kit-card">
+    <span class="kit-card-icon">📋</span>
+    <div class="kit-card-text">
+      <strong>The 5-Minute Morning Performance Reset™</strong>
+      <p>Start every day in the right state of mind. A daily checklist built specifically for real estate professionals.</p>
+    </div>
+  </div>
+</div>
+</div>
 
-  <!-- FORM STATE -->
-  <div class="form-box" id="form-container">
-    <h2>Get Your Free Kit Instantly</h2>
-    <p>Enter your name and email and I'll send everything to your inbox right now. No purchase required — ever.</p>
+<!-- FORM SECTION -->
+<div class="form-wrap">
 
-    <form id="kit-form" onsubmit="handleSubmit(event)">
+  <!-- BREVO FORM -->
+  <div class="form-box" style="padding:32px;">
+    <h2 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:8px;">Start Training Your Mind — Free</h2>
+    <p style="font-size:13px;color:var(--text-light);margin-bottom:20px;line-height:1.6;">Built by a Realtor with 25+ years of experience. I'll send the complete Realtor Mental Performance Starter Kit to your inbox immediately.</p>
+
+    <form id="sib-form" method="POST" action="https://1e88675d.sibforms.com/serve/MUIFALNrIOxaAXop-D0jLvh1AcgV1M_hR88hgmPIkzsPmaUgbtWvT-fgIUjaAy8n098phZteqcTSaEyCOFA9t77JZw-FBa7r1u-muCyvxFU1wPTWbwajhLMAkYx_oO4Ss_KyJ1GAxj3jZC190y6bw62Y27yOcwydYt2w838jb4wsSj5dt74r3yBVKoHsOg5FzAfa6TeMmV6UdCeZjw==">
+
       <div class="form-group">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+        <label for="FIRSTNAME">First Name</label>
+        <input class="input" maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="Your first name" data-required="true" required />
       </div>
+
       <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        <label for="EMAIL">Email Address</label>
+        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
       </div>
-      <button type="submit" class="submit-btn" id="submit-btn">
-        Send Me the Free Kit →
+
+      <button class="sib-form-block__button submit-btn" type="submit">
+        Start Training My Mind — Free →
       </button>
-      <p class="form-privacy">No spam. No pitch on every email. Just the kit and occasional useful content for Realtors.</p>
+
+      <p style="font-size:11px;color:var(--text-light);text-align:center;margin-top:8px;line-height:1.5;">Instant access. Read today. Start using right away.</p>
+      <p style="font-size:11px;color:var(--text-light);text-align:center;margin-top:8px;line-height:1.6;padding-top:10px;border-top:1px solid var(--border);">You'll receive the free kit immediately plus occasional practical tips I've learned over 25 years in real estate. Unsubscribe anytime.</p>
+
+      <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
+      <input type="hidden" name="locale" value="en">
     </form>
   </div>
 
-  <!-- SUCCESS STATE -->
-  <div class="success-box" id="success-container">
-    <div class="success-icon">✅</div>
-    <h2>Your Kit Is On Its Way</h2>
-    <p>Check your inbox in the next few minutes — you'll have all three tools waiting for you.</p>
-    <div class="check-email">
-      <p><strong>Check your spam folder</strong> if you don't see it within 5 minutes. Add hello@aethura.app to your contacts to make sure future emails land in your inbox.</p>
-    </div>
-    <p style="font-size:14px;color:var(--text-light);">While you wait — listen to the 90-Second Confidence Reset above. That's the first thing in your kit.</p>
-  </div>
+</div>
 
+<!-- SOCIAL PROOF -->
+<div class="social-proof">
+  <div class="sp-box">
+    <p><strong>Used by Realtors</strong> to prepare for listing appointments, recover after difficult transactions, and start every morning focused and confident.</p>
+  </div>
 </div>
 
 <!-- DAVE SECTION -->
@@ -223,8 +311,11 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
       <img src="dave-cole-avatar.jpg" alt="Dave Cole" class="dave-photo">
       <div class="dave-text">
         <strong>Dave Cole</strong>
-        <span class="dave-title">Broker · REI & REO Realty LLC · Phoenix, AZ · 25+ Years</span>
-        <p>I built this kit because nobody ever taught me the mental side of this business. I had to figure it out the hard way — over 25 years of lost listings, difficult clients, feast and famine cycles, and eventually learning how to show up differently. Everything in this kit is what I wish someone had handed me in year one.</p>
+        <span class="dave-title">Licensed Broker · REI & REO Realty LLC · Phoenix, AZ · 25+ Years</span>
+        <p>Hi, I'm Dave Cole.</p>
+        <p>I've been a licensed Realtor and broker for more than 25 years. Like most agents, nobody ever taught me the mental side of this business.</p>
+        <p>I had to learn it through difficult clients, failed escrows, rejection, burnout, and years of riding the feast-or-famine roller coaster.</p>
+        <p>Everything in this free kit is what I wish someone had handed me in my first year.</p>
       </div>
     </div>
   </div>
@@ -232,8 +323,8 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
 
 <!-- PROGRAM LINK -->
 <div class="program-link">
-  <p>Want the complete program?</p>
-  <a href="realtors.html">See Close More. Stress Less. — The Full Mental Performance System →</a>
+  <p>Ready to take the next step?</p>
+  <a href="realtors.html">Explore the complete Close More. Stress Less. Mental Performance System →</a>
 </div>
 
 <!-- FOOTER -->
@@ -245,61 +336,23 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);li
 </footer>
 
 <script>
-function handleSubmit(e) {
-  e.preventDefault();
-  
-  const firstName = document.getElementById('first-name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const btn = document.getElementById('submit-btn');
-  
-  // Disable button while submitting
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  
-  // Track conversion in Google Analytics
-  gtag('event', 'generate_lead', {
-    'event_category': 'Free Kit',
-    'event_label': 'Starter Kit Opt-in',
-    'value': 1
+  // Track conversion when form submits
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('sib-form');
+    if (form) {
+      form.addEventListener('submit', function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'generate_lead', {
+            'event_category': 'Free Kit',
+            'event_label': 'Starter Kit Opt-in',
+            'value': 1
+          });
+        }
+      });
+    }
   });
-
-  // Submit to Brevo (Sendinblue) API
-  // Replace BREVO_LIST_ID and BREVO_API_KEY with your actual values
-  const BREVO_API_KEY = 'YOUR_BREVO_API_KEY';
-  const BREVO_LIST_ID = YOUR_BREVO_LIST_ID;
-
-  fetch('https://api.brevo.com/v3/contacts', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'api-key': BREVO_API_KEY
-    },
-    body: JSON.stringify({
-      email: email,
-      attributes: { FIRSTNAME: firstName },
-      listIds: [BREVO_LIST_ID],
-      updateEnabled: true
-    })
-  })
-  .then(response => {
-    // Show success regardless — Brevo may return 204 or 201
-    showSuccess();
-  })
-  .catch(error => {
-    // Still show success to user — log error for debugging
-    console.error('Brevo error:', error);
-    showSuccess();
-  });
-}
-
-function showSuccess() {
-  document.getElementById('form-container').style.display = 'none';
-  document.getElementById('success-container').style.display = 'block';
-  // Scroll to success message
-  document.getElementById('success-container').scrollIntoView({behavior: 'smooth', block: 'center'});
-}
 </script>
+
 
 </body>
 </html>
